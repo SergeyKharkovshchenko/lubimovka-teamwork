@@ -1,3 +1,3 @@
 # About
 
-Project for teamwork practice.
+Project for teamwork practice
