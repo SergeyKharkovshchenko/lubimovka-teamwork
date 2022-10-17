@@ -1,0 +1,16 @@
+:root {
+  --green-color: #B7C09D;
+  --base-text: 16px;
+}
+
+.page {
+
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #242424;;
+  background-color: #E5E5E5;
+  font-family: 'Formular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
