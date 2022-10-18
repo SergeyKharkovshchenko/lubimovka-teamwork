@@ -7,10 +7,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Любимовка</title>
   <link rel="stylesheet" href="pages/index.css">
+  <script src="./scripts/mobileMenu.js" defer></script>
 </head>
 
 <body class="page">
-  <header class="header"></header>
+  <header class="header">
+    <a href="./index.html" class="logo header__logo">
+      <img class="logo__img" src="./images/logo.svg" alt="Логотип Любимовка.">
+    </a>
+    <button class="button button_type_arr-right-rtl header__button">
+      проекты
+    </button>
+    <div class="header__menu">
+      <nav>
+        <ul class="header__menu-section">
+          <li>
+            <a href="./index.html" class="link">Афиша</a>
+          </li>
+          <li>
+            <a href="./index.html" class="link">Библиотека</a>
+          </li>
+          <li>
+            <a href="./index.html" class="link">Проекты</a>
+          </li>
+          <li>
+            <a href="./index.html" class="link">История</a>
+          </li>
+          <li>
+            <a href="./index.html" class="link">Блог</a>
+          </li>
+          <li>
+            <a href="./index.html" class="link">Новости</a>
+          </li>
+          <li>
+            <a href="./index.html" class="link">О фестивале</a>
+          </li>
+          <li>
+            <a href="./index.html" class="link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__menu-section">
+        <li>
+          <a href="#" class="link">ytube</a>
+        </li>
+        <li>
+          <a href="#" class="link">tlgrm</a>
+        </li>
+        <li>
+          <a href="#" class="link">vk</a>
+        </li>
+      </ul>
+      <a href="#" class="link link_donate header__single-link">
+        <div class="link__plus-icon"></div>
+        поддержать
+      </a>
+    </div>
+    <button type="button" class="menu-button" aria-label="Меню.">
+      <div class="menu-button__burger"></div>
+    </button>
+  </header>
   <main class="main">
     <section class="intro"></section>
     <section class="about"></section>
@@ -26,5 +82,6 @@
   </main>
   <footer class="footer"></footer>
 </body>
+
 
 </html>

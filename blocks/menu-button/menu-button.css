@@ -1,0 +1,15 @@
+.menu-button {
+  width: 72px;
+  height: 72px;
+  border: none;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--base-color);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
