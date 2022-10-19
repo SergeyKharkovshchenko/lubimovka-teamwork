@@ -18,3 +18,11 @@
 .header__menu::-webkit-scrollbar {
   display: none;
 }
+
+@media(min-width: 1350px) {
+  .header__menu {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+  }
+}

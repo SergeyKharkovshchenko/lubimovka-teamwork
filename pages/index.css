@@ -23,5 +23,6 @@
 @import url(../blocks/header/__menu/header__menu.css);
 @import url(../blocks/header/__menu/_opened/header__menu_opened.css);
 @import url(../blocks/header/__menu-section/header__menu-section.css);
+@import url(../blocks/header/__menu-section/_main/header__menu-section_main.css);
 @import url(../blocks/header/__single-link/header__single-link.css);
 @import url(../blocks/header/__button/header__button.css);

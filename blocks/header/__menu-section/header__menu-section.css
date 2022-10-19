@@ -8,3 +8,12 @@
   align-items: end;
   row-gap: 10px;
 }
+
+@media(min-width: 1350px) {
+  .header__menu-section {
+    border-bottom: none;
+    flex-direction: row;
+    border-right: 1px solid var(--base-color);
+    padding: 13px 14px;
+  }
+}

@@ -13,3 +13,9 @@
   top: 0;
   z-index: 2;
 }
+
+@media(min-width: 1350px) {
+  .menu-button {
+    display: none;
+  }
+}

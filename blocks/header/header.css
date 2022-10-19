@@ -5,3 +5,13 @@
   gap: 19px;
   position: relative;
 }
+
+@media(min-width: 1350px) {
+  .header {
+    border-bottom: 1px solid var(--base-color);
+    padding: 15px 20px 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
