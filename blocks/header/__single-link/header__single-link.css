@@ -1,0 +1,13 @@
+.header__single-link {
+  align-self: end;
+  padding: 5px 0;
+}
+
+@media(min-width: 1350px) {
+  .header__single-link {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    padding: 13px 0 13px 13px;
+  }
+}

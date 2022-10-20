@@ -1,0 +1,10 @@
+.header__logo {
+  margin-top: 4px;
+  z-index: 2;
+}
+
+@media(min-width: 1350px) {
+  .header__logo {
+    margin-top: 0;
+  }
+}
