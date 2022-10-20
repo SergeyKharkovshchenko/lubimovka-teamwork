@@ -1,0 +1,14 @@
+.link__plus-icon {
+  margin-right: 6px;
+  display: flex;
+}
+
+.link__plus-icon::before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23242424' d='M6 0h1v13H6z'/%3E%3Cpath fill='%23242424' d='M0 6h13v1H0z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
