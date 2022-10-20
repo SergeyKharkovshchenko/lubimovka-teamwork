@@ -18,3 +18,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.page__title {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
