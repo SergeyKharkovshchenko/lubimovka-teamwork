@@ -1,0 +1,29 @@
+.body-text {
+  font-family: var(--body-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -.01em;
+  color: var(--base-color);
+  margin: 0;
+  padding: 0;
+}
+
+.body-text--medium {
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: normal;
+}
+
+.body-text--small {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+.body-text--caption {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: normal;
+}
