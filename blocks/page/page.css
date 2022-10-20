@@ -1,6 +1,10 @@
 :root {
-  --green-color: #B7C09D;
-  --base-text: 16px;
+  --accent-color: #B7C09D;
+  --back-color: #ECEBE8;
+  --base-color: #242424;
+  --page-color: #E5E5E5;
+  --base-text-size: 16px;
+  --body-font: 'Formular', 'Verdana', sans-serif;
 }
 
 .page {
@@ -8,7 +12,7 @@
   margin: 0 auto;
   font-size: 20px;
   color: #242424;;
-  background-color: #E5E5E5;
+  background-color: var(--page-color);
   font-family: 'Formular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

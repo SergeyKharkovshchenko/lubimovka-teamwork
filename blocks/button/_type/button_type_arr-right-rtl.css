@@ -1,0 +1,20 @@
+.button_type_arr-right-rtl {
+  justify-content: end;
+  box-shadow: -1px -1px 0px 0px var(--base-color) inset;
+  padding-right: 0;
+  gap: 5px;
+}
+
+.button_type_arr-right-rtl::after {
+  content: '';
+  width: 21px;
+  height: 13px;
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 6.523.725 5.8 6.523 0l.703.703-5.32 5.32H21v1H1.95L7.2 12.276 6.477 13 .703 7.226 0 6.523Z' fill='%23242424'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button_type_arr-right-rtl:hover::after, .button_type_arr-right-rtl:active:not(:hover)::after  {
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 6.523.725 5.8 6.523 0l.703.703-5.32 5.32H21v1H1.95L7.2 12.276 6.477 13 .703 7.226 0 6.523Z' fill='%23dbdbdb'/%3E%3C/svg%3E");
+}

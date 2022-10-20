@@ -1,0 +1,44 @@
+.button {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: var(--body-font);
+  color: var(--base-color);
+  font-size: var(--base-text-size);
+  position: relative;
+  padding: 8px 9px;
+  border: 0;
+  z-index: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color .15s linear;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  transition: right .15s linear;
+  z-index: 1;
+  background-color: var(--base-color);
+  mix-blend-mode: screen;
+  /* mix-blend-mode: exclusion; */
+}
+
+.button:hover::before, .button:active:not(:hover)::before {
+  right: 0;
+}
+
+.button:hover, .button:active:not(:hover) {
+  color: #dbdbdb;
+}
+
+@media (any-hover: hover) {
+  .button:active {
+    box-shadow: 0px 0px 0px 2px var(--base-color);
+  }
+}
