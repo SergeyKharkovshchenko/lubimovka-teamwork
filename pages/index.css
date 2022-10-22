@@ -14,9 +14,8 @@
 
 @import url(../blocks/button/button.css);
 
-@import url(../blocks/link/link.css);
-@import url(../blocks/link/__plus-icon/link__plus-icon.css);
-@import url(../blocks/link/_donate/link_donate.css);
+@import url(../blocks/link-menu/link-menu.css);
+@import url(../blocks/link-text/link-text.css);
 
 @import url(../blocks/menu-button/menu-button.css);
 @import url(../blocks/menu-button/__burger/menu-button__burger.css);
@@ -30,3 +29,5 @@
 @import url(../blocks/header/__menu-section/_main/header__menu-section_main.css);
 @import url(../blocks/header/__single-link/header__single-link.css);
 @import url(../blocks/header/__button/header__button.css);
+
+@import url(../blocks/cooperation-section/cooperation-section.css);

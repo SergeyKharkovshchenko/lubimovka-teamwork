@@ -1,0 +1,52 @@
+.link-text {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  z-index: 0;
+  position: relative;
+  display: inline-flex;
+}
+
+.link-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  transition: right .15s linear;
+  z-index: 1;
+  background-color: #242424;
+  mix-blend-mode: screen;
+  backdrop-filter: invert(1);
+}
+
+.link-text::after {
+  content: "";
+  position: absolute;
+  background-color: var(--base-color);
+  height: .05em;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  transition: left .15s linear;
+}
+
+.link-text:hover::before,
+.link-text:active:not(:hover)::before {
+  right: 0;
+}
+
+.link-text:hover::after,
+.link-text:active:not(:hover)::after {
+  left: 100%;
+}
+
+@media (any-hover: hover) {
+  .link-text:active {
+    box-shadow: 0 0 0 2px #242424;
+  }
+}
