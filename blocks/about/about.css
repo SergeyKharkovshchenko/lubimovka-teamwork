@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100vw;
   min-width: 320px;
-  background-color: var(--green-color);
+  background-color: var(--accent-color);
 }
 
 .section-title_about {

@@ -5,6 +5,8 @@
   --page-color: #E5E5E5;
   --base-text-size: 16px;
   --body-font: 'Formular', 'Verdana', sans-serif;
+  --heading-font: 'Neue-Machina', 'Verdana', sans-serif;
+  --main-letter-spacing: -0.01em;
 }
 
 .page {
@@ -16,4 +18,11 @@
   font-family: 'Formular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.page__title {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
