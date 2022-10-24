@@ -3,7 +3,6 @@
   flex-direction: column;
   min-width: 320px;
   background-color: var(--accent-color);
-  position: relative;
 }
 
 .section-title_about {
