@@ -30,3 +30,5 @@
 @import url(../blocks/header/__menu-section/_main/header__menu-section_main.css);
 @import url(../blocks/header/__single-link/header__single-link.css);
 @import url(../blocks/header/__button/header__button.css);
+
+@import url(../blocks/play-section/play-section.css);
