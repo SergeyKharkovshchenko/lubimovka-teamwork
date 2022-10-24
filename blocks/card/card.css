@@ -21,10 +21,6 @@
 
 .card__data {
   display: flex;
-  font-family: var(--body-font);
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 28px;
 }
 
 .card__day {
@@ -40,10 +36,6 @@
 }
 
 .card__actors {
-  font-family: var(--body-font);
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 22px;
   margin-bottom: 8px;
 }
 
@@ -53,10 +45,6 @@
 
 .card__content {
   max-width: 200px;
-  font-family: var(--body-font);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 17px;
   margin: 0 0 48px;
 }
 
