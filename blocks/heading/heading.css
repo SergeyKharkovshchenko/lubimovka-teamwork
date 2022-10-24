@@ -56,6 +56,11 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  .heading--constant-size {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 .heading_star {
