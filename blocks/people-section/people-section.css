@@ -1,6 +1,5 @@
 .people-section {
   padding-bottom: 102px;
-  --horizontal-margin: 25px;
 }
 
 .people-section__heading {
@@ -11,31 +10,9 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  padding: 0 var(--horizontal-margin) 10px;
+  padding: 0 25px 10px;
   column-gap: 30px;
   box-sizing: border-box;
-}
-
-.people-section__fog-wrapper {
-  position: relative;
-}
-
-.people-section__fog-wrapper::before, .people-section__fog-wrapper::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: var(--horizontal-margin);
-}
-
-.people-section__fog-wrapper::before {
-  background: linear-gradient(90deg, rgba(229,229,229,1) 0%, rgba(229,229,229,0) 100%);
-  left: 0;
-}
-
-.people-section__fog-wrapper::after {
-  background: linear-gradient(-90deg, rgba(229,229,229,1) 0%, rgba(229,229,229,0) 100%);
-  right: 0;
 }
 
 @media(min-width: 768px) {
