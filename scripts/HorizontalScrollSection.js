@@ -31,7 +31,7 @@ export default class HorizontalScrollSection {
     this.isMouseDown = false;
     this.startX = 0;
     this.#setScrollable();
-    
+
     this.section.addEventListener('pointerdown', (e) => {
       if (!this.#checkScrollable()) {
         return;
