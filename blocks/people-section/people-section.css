@@ -13,13 +13,6 @@
   padding: 0 25px 10px;
   column-gap: 30px;
   box-sizing: border-box;
-  position: relative;
-  overflow-x: hidden;
-}
-
-.people-section__peoples_scrollable {
-  justify-content: start;
-  cursor: grab;
 }
 
 @media(min-width: 768px) {

@@ -35,3 +35,7 @@
 
 @import url(../blocks/people-section/people-section.css);
 @import url(../blocks/card-people/card-people.css);
+
+/* for JS, must be at end */
+@import url(../blocks/box-for-horizontal-scroll/box-for-horizontal-scroll.css);
+

@@ -2,46 +2,6 @@ export default class HorizontalScrollSection {
   constructor(sectionSelector, scrollableSelector) {
     this.section = document.querySelector(sectionSelector);
     this.scrollableClass = scrollableSelector;
-    this.#setScrollable();
-    this.isMouseDown = false;
-    this.startX = 0;
-
-    this.section.addEventListener('mousedown', (e) => {
-      if (!this.#checkScrollable()) {
-        return;
-      }
-      e.preventDefault();
-
-      this.isMouseDown = true;
-      this.startX = e.pageX;
-    });
-
-    this.section.addEventListener('mouseup', (e) => {
-      this.isMouseDown = false;
-    });
-
-    this.section.addEventListener('mouseleave', (e) => {
-      if (!this.#checkScrollable()) {
-        return;
-      }
-      //TODO задача на всплытие
-        console.log('out');
-        this.isMouseDown = false;
-    });
-
-    this.section.addEventListener('mousemove', (e) => {
-      if (!this.#checkScrollable()) {
-        return;
-      }
-      if (this.isMouseDown) {
-        this.section.scrollLeft += this.startX - e.pageX;
-        this.startX = e.pageX;
-      }
-    });
-
-    window.addEventListener('resize', () => {
-      this.#setScrollable();
-    });
   }
 
   #checkScrollable() {
@@ -56,5 +16,54 @@ export default class HorizontalScrollSection {
     } else {
       this.section.classList.remove(this.scrollableClass);
     }
+  }
+
+  #startScrolling() {
+    this.isMouseDown = true;
+    this.section.style.cursor = 'grabbing';
+  }
+  #resetScrolling() {
+    this.isMouseDown = false;
+    this.section.style.cursor = null;
+  }
+
+  setScrollable() {
+    this.isMouseDown = false;
+    this.startX = 0;
+    this.#setScrollable();
+    
+    this.section.addEventListener('pointerdown', (e) => {
+      if (!this.#checkScrollable()) {
+        return;
+      }
+      this.#startScrolling();
+      e.preventDefault();
+      this.startX = e.clientX;
+    });
+
+    this.section.addEventListener('pointerup', (e) => {
+      this.#resetScrolling();
+    });
+
+    this.section.addEventListener('pointerleave', (e) => {
+      if (!this.#checkScrollable()) {
+        return;
+      }
+      this.#resetScrolling();
+    });
+
+    this.section.addEventListener('pointermove', (e) => {
+      if (!this.#checkScrollable()) {
+        return;
+      }
+      if (this.isMouseDown && e.isPrimary) {
+        this.section.scrollLeft += this.startX - e.clientX;
+        this.startX = e.clientX;
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      this.#setScrollable();
+    });
   }
 }
