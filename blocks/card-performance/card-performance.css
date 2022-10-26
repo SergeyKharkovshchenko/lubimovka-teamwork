@@ -30,8 +30,6 @@
 .card-performance__time {}
 
 .card-performance__title {
-  font-weight: 400;
-  font-family: var(--heading-font);
   margin-top: 16px;
 }
 
