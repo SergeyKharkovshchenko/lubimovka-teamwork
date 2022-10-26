@@ -3,7 +3,7 @@
   grid-template-areas:
     "img description"
     "buttons buttons";
-  border-bottom: 1px solid #242424;
+  border-bottom: 1px solid var(--base-color);
   padding: 32px 22px;
   align-content: flex-start;
   column-gap: 30px;
