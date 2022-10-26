@@ -9,17 +9,6 @@
   margin-top: 32px;
 }
 
-.play-section__card-title {
-  margin: 0;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  color: #242424;
-  font-family: var(--heading-font);
-  margin-bottom: 8px;
-}
-
 .play-section__card {
   min-width: 244px;
   min-height: 441px;
