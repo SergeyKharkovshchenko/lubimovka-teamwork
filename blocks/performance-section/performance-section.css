@@ -2,8 +2,8 @@
   margin: 100px 0 0 0;
 }
 
-.performance-section__section-title {
-  margin-bottom: 6%;
+.performance-section__heading {
+  margin-bottom: 34px;
 }
 
 .performance-section__cards {
@@ -22,7 +22,7 @@
   .performance-section {
     margin: 120px 0 0 0;
   }
-  .performance-section__section-title {
-    margin: 0 0 6% 25%;
+  .performance-section__heading {
+    margin-bottom: 75px;
   }
 }
