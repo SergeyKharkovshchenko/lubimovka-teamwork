@@ -1,4 +1,4 @@
-.card {
+.card-performance {
   display: grid;
   grid-template-areas:
     "img description"
@@ -9,57 +9,57 @@
   column-gap: 30px;
 }
 
-.card__img {
+.card-performance__img {
   width: 92px;
   height: 123px;
   grid-area: img;
 }
 
-.card__description {
+.card-performance__description {
   grid-area: description;
 }
 
-.card__data {
+.card-performance__data {
   display: flex;
 }
 
-.card__day {
+.card-performance__day {
   margin-right: 35px;
 }
 
-.card__time {}
+.card-performance__time {}
 
-.card__title {
+.card-performance__title {
   font-weight: 400;
   font-family: var(--heading-font);
   margin-top: 16px;
 }
 
-.card__actors {
+.card-performance__actors {
   margin-bottom: 8px;
 }
 
-.card__actors-text {
+.card-performance__actors-text {
   margin: 0;
 }
 
-.card__content {
+.card-performance__content {
   max-width: 200px;
   margin: 0 0 48px;
 }
 
-.card__buttons {
+.card-performance__buttons {
   display: inline-flex;
   align-items: flex-start;
   grid-area: buttons;
 }
 
-.card__button:not(:last-child) {
+.card-performance__button:not(:last-child) {
   margin-right: 27px;
 }
 
 @media(min-width: 768px) {
-  .card {
+  .card-performance {
     grid-template-areas:
       "img description"
       "img buttons";
@@ -69,45 +69,45 @@
     margin: 32px 0;
   }
 
-  .card:nth-child(2n) {
+  .card-performance:nth-child(2n) {
     border: none;
   }
 
-  .card__img {
+  .card-performance__img {
     height: 161px;
     width: 120px;
   }
 
-  .card__actors {
+  .card-performance__actors {
     padding-left: 30px;
     margin-bottom: 16px;
   }
 
-  .card__title {
+  .card-performance__title {
     margin-bottom: 16px;
   }
 
-  .card__content {
+  .card-performance__content {
     margin: 0 0 16px;
   }
 
-  .card__buttons {
+  .card-performance__buttons {
     flex-direction: column;
   }
 
 
-  .card__button:not(:last-child) {
+  .card-performance__button:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 16px;
   }
 }
 
 @media(min-width: 1050px) {
-  .card:nth-child(2n) {
+  .card-performance:nth-child(2n) {
     border-right: 1px solid var(--base-color);
   }
 
-  .card:nth-child(3n) {
+  .card-performance:nth-child(3n) {
     border: none;
   }
 }
