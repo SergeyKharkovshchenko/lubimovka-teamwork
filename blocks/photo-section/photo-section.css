@@ -26,6 +26,7 @@
 
 .photo-section__heading {
   margin-bottom: 22px;
+  padding-left: 24px;
 }
 
 @media screen and (min-width: 768px) {
