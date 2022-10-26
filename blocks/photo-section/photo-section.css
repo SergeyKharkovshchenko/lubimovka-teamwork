@@ -14,6 +14,7 @@
 
 .photo-section__list-item {
   margin: 0;
+  width: 100%;
   padding: 0;
 }
 
@@ -29,6 +30,7 @@
 
 @media screen and (min-width: 768px) {
   .photo-section__list {
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
     gap:1px 1px;
   }
