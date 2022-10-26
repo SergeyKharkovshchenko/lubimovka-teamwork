@@ -1,0 +1,28 @@
+.performance-section {
+  margin: 100px 0 0 0;
+}
+
+.performance-section__heading {
+  margin-bottom: 34px;
+}
+
+.performance-section__cards {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media(min-width: 768px) {
+  .performance-section__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .performance-section {
+    margin: 120px 0 0 0;
+  }
+  .performance-section__heading {
+    margin-bottom: 75px;
+  }
+}

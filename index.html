@@ -22,44 +22,44 @@
       <nav>
         <ul class="header__menu-section header__menu-section_main">
           <li>
-            <a href="./index.html" class="link">Афиша</a>
+            <a href="./index.html" class="link-menu">Афиша</a>
           </li>
           <li>
-            <a href="./index.html" class="link">Библиотека</a>
+            <a href="./index.html" class="link-menu">Библиотека</a>
           </li>
           <li>
-            <a href="./index.html" class="link">Проекты</a>
+            <a href="./index.html" class="link-menu">Проекты</a>
           </li>
           <li>
-            <a href="./index.html" class="link">История</a>
+            <a href="./index.html" class="link-menu">История</a>
           </li>
           <li>
-            <a href="./index.html" class="link">Блог</a>
+            <a href="./index.html" class="link-menu">Блог</a>
           </li>
           <li>
-            <a href="./index.html" class="link">Новости</a>
+            <a href="./index.html" class="link-menu">Новости</a>
           </li>
           <li>
-            <a href="./index.html" class="link">О&nbsp;фестивале</a>
+            <a href="./index.html" class="link-menu">О&nbsp;фестивале</a>
           </li>
           <li>
-            <a href="./index.html" class="link">Контакты</a>
+            <a href="./index.html" class="link-menu">Контакты</a>
           </li>
         </ul>
       </nav>
       <ul class="header__menu-section">
         <li>
-          <a href="#" class="link" target="_blank">ytube</a>
+          <a href="#" class="link-menu" target="_blank">ytube</a>
         </li>
         <li>
-          <a href="#" class="link" target="_blank">tlgrm</a>
+          <a href="#" class="link-menu" target="_blank">tlgrm</a>
         </li>
         <li>
-          <a href="#" class="link" target="_blank">vk</a>
+          <a href="#" class="link-menu" target="_blank">vk</a>
         </li>
       </ul>
-      <a href="#" class="link link_donate header__single-link" target="_blank">
-        <div class="link__plus-icon"></div>
+      <a href="#" class="link-menu link-menu_donate header__single-link" target="_blank">
+        <div class="link-menu__plus-icon"></div>
         поддержать
       </a>
     </div>
@@ -70,11 +70,14 @@
   <main class="main">
     <section class="intro">
       <h1 class="intro__title">Любимовка.Ещё</h1>
+
       <div class="intro__wrapper">
-        <p class="intro__text">Межсезонные читки и&nbsp;обсуждение пьес из&nbsp;списка отмеченных отборщиками Любимовки. Можно слушать, обсуждать и&nbsp;даже участвовать.<span
-            class="intro__text-hider">Можно слушать, обсуждать и даже участвовать.</span></p>
+        <p class="intro__text">Межсезонные читки и&nbsp;обсуждение пьес из&nbsp;списка отмеченных отборщиками Любимовки.
+          Можно слушать, обсуждать и&nbsp;даже участвовать.<span class="intro__text-hider">Можно слушать, обсуждать и
+            даже участвовать.</span></p>
         <img class="intro__photo" src="/images/title foto cropped.webp" alt="фото">
       </div>
+
     </section>
     <section class="about">
       <h2 class="section-title section-title_about">О проекте</h2>
@@ -85,8 +88,109 @@
     <section class="video-section"></section>
     <section class="two-video-section"></section>
     <section class="three-video-section"></section>
-    <section class="photo-section"></section>
-    <section class="performance-section"></section>
+    <section class="photo-section">
+      <h2 class="heading photo-section__heading page__title">Заголовок блока<br> с фотографиями</h2>
+      <ul class="photo-section__list">
+        <li class="photo-section__list-item">
+          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 158.jpg" alt="Актёр на сцене">
+        </li>
+        <li class="photo-section__list-item">
+          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 160.jpg" alt="Фестиваль">
+        </li>
+        <li class="photo-section__list-item">
+          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 193.jpg" alt="2 актёра на сцене">
+        </li>
+        <li class="photo-section__list-item">
+          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 194.jpg" alt="Актриса на сцене">
+        </li>
+        <li class="photo-section__list-item">
+          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 195.jpg" alt="Фестиваль">
+        </li>
+        <li class="photo-section__list-item">
+          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 196.jpg" alt="Фестиваль">
+        </li>
+        <li class="photo-section__list-item">
+          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 197.jpg" alt="Актриса на сцене">
+        </li>
+        <li class="photo-section__list-item">
+          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 198.jpg" alt="Актриса на сцене">
+        </li>
+      </ul>
+    </section>
+    <section class="performance-section">
+      <h2 class="heading performance-section__heading page__title">Заголовок блока<br>с тремя и более<br>спектаклями</h2>
+      <ul class="performance-section__cards">
+        <li class="card-performance">
+          <img src="./images/performance-section/Rectangle 135.jpg" class="card-performance__img" alt="Спектакль 'Про линя'">
+          <div class="card-performance__description">
+            <time class="card-performance__data body-text">
+              <span class="card-performance__day">15 декабря</span>
+              <span class="card-performance__time">11:00</span>
+            </time>
+            <h3 class="card-performance__title heading heading--medium">Про линя</h3>
+            <div class="card-performance__actors body-text body-text--small">
+              <p class="card-performance__actors-text">Драматург: Ольга Казакова</p>
+              <p class="card-performance__actors-text">Режиссёр: Катя Ганюшина</p>
+            </div>
+            <p class="card-performance__content body-text body-text--caption">читка проекта Любимовка.Ещё</p>
+          </div>
+          <div class="card-performance__buttons">
+            <button class="button button_type_arr-left-ltr card-performance__button">
+              О спектакле
+            </button>
+            <button class="button button_type_arr-left-ltr card-performance__button">
+              Билеты
+            </button>
+          </div>
+        </li>
+        <li class="card-performance">
+          <img src="./images/performance-section/Rectangle 135-1.jpg" class="card-performance__img" alt="Спектакль 'Мама'">
+          <div class="card-performance__description">
+            <time class="card-performance__data body-text">
+              <span class="card-performance__day">15 декабря</span>
+              <span class="card-performance__time">11:00</span>
+            </time>
+            <h3 class="card-performance__title heading heading--medium">МАМА</h3>
+            <div class="card-performance__actors body-text body-text--small">
+              <p class="card-performance__actors-text">Драматург: Ольга Казакова</p>
+              <p class="card-performance__actors-text">Режиссёр: Катя Ганюшина</p>
+            </div>
+            <p class="card-performance__content body-text body-text--caption">читка проекта Любимовка.Ещё</p>
+          </div>
+          <div class="card-performance__buttons">
+            <button class="button button_type_arr-left-ltr card-performance__button">
+              О спектакле
+            </button>
+            <button class="button button_type_arr-left-ltr card-performance__button">
+              Билеты
+            </button>
+          </div>
+        </li>
+        <li class="card-performance">
+          <img src="./images/performance-section/Rectangle 135-2.jpg" class="card-performance__img" alt="Спектакль 'Мама'">
+          <div class="card-performance__description">
+            <time class="card-performance__data body-text">
+              <span class="card-performance__day">15 декабря</span>
+              <span class="card-performance__time">11:00</span>
+            </time>
+            <h3 class="card-performance__title heading heading--medium">МАМА</h3>
+            <div class="card-performance__actors body-text body-text--small">
+              <p class="card-performance__actors-text">Драматург: Ольга Казакова</p>
+              <p class="card-performance__actors-text">Режиссёр: Катя Ганюшина</p>
+            </div>
+            <p class="card-performance__content body-text body-text--caption">читка проекта Любимовка.Ещё</p>
+          </div>
+          <div class="card-performance__buttons">
+            <button class="button button_type_arr-left-ltr card-performance__button">
+              О спектакле
+            </button>
+            <button class="button button_type_arr-left-ltr card-performance__button">
+              Билеты
+            </button>
+          </div>
+        </li>
+      </ul>
+    </section>
     <section class="play-section">
       <h2 class="section-title">Заголовок блока с пьесами</h2>
       <div class="play-section__wrapper">
@@ -167,8 +271,26 @@
       </div>
     </section>
     <section class="people-section"></section>
-    <section class="button-link-section"></section>
-    <section class="cooperation-section"></section>
+    <section class="button-link-section">
+      <h2 class="heading page__title button-link-section__heading">
+        Заголовок блока<br>с&nbsp;кнопкой/ссылкой
+      </h2>
+      <div class="button-link-section__content-box">
+        <p class="body-text button-link-section__text-content">Видео прошедших мероприятий можно посмотреть в&nbsp;плейлисте на&nbsp;канале Любимовки в&nbsp;YouTube</p>
+        <a href="https://www.youtube.com/" class="button button_size_big button_type_big-arr-ltr button-link-section__button" target="_blank">youtube</a>
+      </div>
+    </section>
+    <section class="cooperation-section">
+      <h2 class="heading heading--medium heading_star cooperation-section__heading">
+        Проект открыт<br>к&nbsp;сотрудничеству
+      </h2>
+      <p class="heading heading--small cooperation-section__paragraph">
+        Мы&nbsp;находимся в&nbsp;постоянном поиске режиссёров и&nbsp;актёров, заинтересованных в&nbsp;постаноке читок.
+      </p>
+      <p class="heading heading--small cooperation-section__paragraph">
+        Пишите на <a class="link-text" href="mailto:more@lubimovka.ru" target="_blank">more@lubimovka.ru</a>
+      </p>
+    </section>
   </main>
   <footer class="footer"></footer>
 </body>

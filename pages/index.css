@@ -8,15 +8,15 @@
 @import url(../blocks/section-title/section-title.css);
 @import url(../blocks/about/about.css);
 @import url(../blocks/intro/intro.css);
+@import url(../blocks/photo-section/photo-section.css);
 
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/__img/logo__img.css);
 
 @import url(../blocks/button/button.css);
 
-@import url(../blocks/link/link.css);
-@import url(../blocks/link/__plus-icon/link__plus-icon.css);
-@import url(../blocks/link/_donate/link_donate.css);
+@import url(../blocks/link-menu/link-menu.css);
+@import url(../blocks/link-text/link-text.css);
 
 @import url(../blocks/menu-button/menu-button.css);
 @import url(../blocks/menu-button/__burger/menu-button__burger.css);
@@ -30,5 +30,13 @@
 @import url(../blocks/header/__menu-section/_main/header__menu-section_main.css);
 @import url(../blocks/header/__single-link/header__single-link.css);
 @import url(../blocks/header/__button/header__button.css);
+
+@import url(../blocks/cooperation-section/cooperation-section.css);
+
+
+@import url(../blocks/card-performance/card-performance.css);
+@import url(../blocks/performance-section/performance-section.css);
+
+@import url(../blocks/button-link-section/button-link-section.css);
 
 @import url(../blocks/play-section/play-section.css);

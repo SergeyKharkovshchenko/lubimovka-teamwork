@@ -21,7 +21,14 @@
 }
 
 .page__title {
-  max-width: 720px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 25px;
+  max-width: 450px;
+  box-sizing: border-box;
+}
+
+@media(min-width: 768px) {
+  .page__title {
+    max-width: 720px;
+  }
 }
