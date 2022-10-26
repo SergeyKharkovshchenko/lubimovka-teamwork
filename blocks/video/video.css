@@ -1,18 +1,18 @@
 .video{
     display: flex;
     justify-content: start;
-    overflow: hidden; 
+    overflow: hidden;
     max-width: 1440px;
     max-height: 236px;
     min-height: 168px;
    }
-   
+
    @media screen and (min-width: 768px){
        .video{
        justify-content: center;
        }
    }
-   
+
    .video__screen{
        margin-right: 30px;
        min-width: 299px;
@@ -20,7 +20,7 @@
        max-width: 420px;
        max-height: 236px;
    }
-   
+
    @media screen and (min-width: 768px){
        .video__screen{
        margin-right: 59px;
@@ -28,39 +28,39 @@
        width: 420px;
        }
    }
-   
+
    .video__screen:last-child{
        margin-right: 0;
    }
-   
+
    .video__title{
        margin: 0 auto 32px auto;
        min-height: auto;
        width: 90%;
        text-align: center;
    }
-   
+
    @media screen and (min-width: 530px){
-       .video__title{
-           text-align: start;
-           max-width: 716px;
-       }
+      .video__title{
+        text-align: start;
+        max-width: 716px;
+      }
    }
-   
+
    .video__text{
-       margin: 32px auto 0 auto;
-       width: 90%;
-       max-width: 716px;
+      margin: 32px auto 0 auto;
+      width: 90%;
+      max-width: 716px;
    }
-   
+
    .video-section{
-       display: flex;
-       flex-direction: column;
-       min-width: 366px;    
-       max-width: 1440px;
-       margin-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      min-width: 366px;
+      max-width: 1440px;
+      padding-top: 100px;
    }
-   
+
    .video__single{
        min-width: 299px;
        min-height: 168px;
