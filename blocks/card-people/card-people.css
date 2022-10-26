@@ -1,0 +1,26 @@
+.card-people {
+  display: grid;
+  grid-template-columns: min-content;
+}
+
+.card-people__img {
+  display: block;
+  margin-bottom: 16px;
+  width: 213px;
+  aspect-ratio: 213/265;
+  object-fit: cover;
+  object-position: center;
+  /* filter: grayscale(100%); */
+}
+
+.card-people__heading {
+  margin-bottom: 8px;
+}
+
+.card-people__text {
+  margin-left: 33px;
+}
+
+@media(min-width: 768px) {
+
+}

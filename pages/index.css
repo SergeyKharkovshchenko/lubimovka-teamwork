@@ -3,6 +3,7 @@
 
 @import url(../blocks/body-text/body-text.css);
 @import url(../blocks/heading/heading.css);
+@import url(../blocks/scrolling-fog-wrapper/scrolling-fog-wrapper.css);
 
 @import url(../blocks/page/page.css);
 @import url(../blocks/section-title/section-title.css);
@@ -37,3 +38,15 @@
 
 @import url(../blocks/button-link-section/button-link-section.css);
 
+@import url(../blocks/card-performance/card-performance.css);
+@import url(../blocks/performance-section/performance-section.css);
+
+@import url(../blocks/button-link-section/button-link-section.css);
+
+@import url(../blocks/play-section/play-section.css);
+
+@import url(../blocks/people-section/people-section.css);
+@import url(../blocks/card-people/card-people.css);
+
+/* for JS, must be at end */
+@import url(../blocks/box-for-horizontal-scroll/box-for-horizontal-scroll.css);
