@@ -24,15 +24,14 @@
 }
 
 .card-performance__day {
-  margin-right: 35px;
+  margin-right: 34px;
 }
 
 .card-performance__time {}
 
 .card-performance__title {
-  margin-top: 16px;
+  margin: 16px 0 8px;
 }
-
 .card-performance__actors {
   margin-bottom: 8px;
 }
@@ -109,3 +108,4 @@
     border: none;
   }
 }
+

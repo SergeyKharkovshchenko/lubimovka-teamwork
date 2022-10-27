@@ -1,39 +1,37 @@
 .about {
   display: flex;
   flex-direction: column;
-  width: 100vw;
   min-width: 320px;
   background-color: var(--accent-color);
 }
 
-.section-title_about {
-  margin: 13% 16% 4% 6%;
-  width: 78%;
-  height: 9%;
+.about__heading {
+  margin-top: 79px;
+  margin-bottom: 17px;
 }
+
+@media (min-width: 768px) {
+  .section-title_about {
+    margin-top: 79px;
+    max-width: 716px;
+  }
+  }
 
 .about__description {
-  margin: 0 10% 16% 20%;
-  width: 74%;
+  margin: 0 24px 72px 85px;
+  width: 70%;
   height: 58%;
-  font-family: "Formular";
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
-  color: #242424;
+  max-width: 509px;
 }
 
-@media (min-width: 320px) {
-  .about {
-  }
-}
-
-@media (min-width: 320px) {
-  .section-title_about {
-  }
-}
-
-@media (max-width: 320px) {
+@media (min-width: 520px) {
   .about__description {
+    margin: 0 auto 120px auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .about__description {
+    margin: 0 auto 120px 420px;
   }
 }
