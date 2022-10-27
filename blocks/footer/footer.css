@@ -1,0 +1,67 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 56px 0 74px;
+}
+
+.footer__logo {
+  height: 80px;
+  width: 93px;
+  padding-left: 25px;
+}
+
+.footer__address {
+  padding: 32px 0 0 22px;
+  max-width: 278px;
+}
+
+.footer__address-header {
+  padding-bottom: 8px;
+}
+
+.footer__address-text {}
+
+.footer__menu {
+  padding-left: 22px;
+}
+
+.footer__menu-list {}
+
+.footer__mune-item {}
+
+.footer__menu-link {}
+
+.footer__project {}
+
+.footer__project-item {}
+
+.footer__partners {}
+
+.footer__partners-block {}
+
+.footer__parters-text {}
+
+.footer__parters-text_type_desktop {}
+
+.footer__copyright {}
+
+.footer__copyright-name {}
+
+.footer__copyright-link {}
+
+.footer__copyright-designers {}
+
+.footer__copyright-developers {}
+
+@media(min-width: 414px) {
+  .footer__logo {
+    padding-left: 58px;
+  }
+
+  .footer__address {
+    padding: 32px 0 0 55px;
+  }
+  .footer__menu {
+    padding-left: 55px;
+  }
+}
