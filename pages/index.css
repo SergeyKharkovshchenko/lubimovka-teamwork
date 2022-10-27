@@ -12,7 +12,6 @@
 @import url(../blocks/photo-section/photo-section.css);
 
 @import url(../blocks/logo/logo.css);
-@import url(../blocks/logo/__img/logo__img.css);
 
 @import url(../blocks/button/button.css);
 
@@ -20,17 +19,8 @@
 @import url(../blocks/link-text/link-text.css);
 
 @import url(../blocks/menu-button/menu-button.css);
-@import url(../blocks/menu-button/__burger/menu-button__burger.css);
-@import url(../blocks/menu-button/__burger/_opened/menu-button__burger_opened.css);
 
 @import url(../blocks/header/header.css);
-@import url(../blocks/header/__logo/header__logo.css);
-@import url(../blocks/header/__menu/header__menu.css);
-@import url(../blocks/header/__menu/_opened/header__menu_opened.css);
-@import url(../blocks/header/__menu-section/header__menu-section.css);
-@import url(../blocks/header/__menu-section/_main/header__menu-section_main.css);
-@import url(../blocks/header/__single-link/header__single-link.css);
-@import url(../blocks/header/__button/header__button.css);
 
 @import url(../blocks/cooperation-section/cooperation-section.css);
 
