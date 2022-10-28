@@ -165,7 +165,7 @@
   .footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 36px;
+    gap: 56px;
     padding: 56px 30px 74px;
   }
 
@@ -174,7 +174,7 @@
   }
 
   .footer__menu {
-    padding: 56px 0 0;
+    padding: 56px 0 0 55px;
   }
 
   .footer__project {
