@@ -84,6 +84,8 @@
 }
 
 .footer__partners-logo {
+  max-width: 120px;
+  max-height: 45px;
   mix-blend-mode: multiply;
 }
 
@@ -183,7 +185,6 @@
   .footer__partners {
     padding: 20px 0 0;
     margin: auto;
-    grid-template-rows: 30px;
     grid-template-columns: repeat(5, 90px);
     column-gap: 36px;
     grid-column: 1/3;
@@ -238,6 +239,13 @@
     margin: 0;
     grid-column: 2/4;
     grid-row: 1/2;
+    padding: 6px 0 0;
+    align-items: flex-start;
+  }
+
+  .footer__partners-logo {
+    max-width: 100px;
+    max-height: 40px;
   }
 
   .footer__address {
