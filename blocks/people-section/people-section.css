@@ -1,0 +1,23 @@
+.people-section {
+  padding-bottom: 102px;
+}
+
+.people-section__heading {
+  margin-bottom: 24px;
+}
+
+.people-section__peoples {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0 25px 10px;
+  column-gap: 30px;
+  box-sizing: border-box;
+}
+
+@media(min-width: 768px) {
+  .people-section__heading {
+    margin-bottom: 58px;
+  }
+}
+

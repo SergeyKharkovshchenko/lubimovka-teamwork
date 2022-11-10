@@ -23,13 +23,16 @@
   object-fit: cover;
 }
 
-.photo-section__section-title {
-  margin: 0 0 6% 6%;
+.photo-section__heading {
+  margin-bottom: 22px;
 }
 
 @media screen and (min-width: 768px) {
   .photo-section__list {
     grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
     gap:1px 1px;
+  }
+  .photo-section__heading{
+    margin-bottom: 42px;
   }
 }
