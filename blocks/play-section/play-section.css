@@ -16,35 +16,21 @@
 }
 
 .play-section__inner {
-  height: 341px;
+  min-height: 341px;
   background-color: var(--accent-color);
-  padding: 16px 40px 0 16px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .play-section__card-links {
   width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.play-section__card-button {
-  width: 100%;
-  background: none;
-  border: none;
-  border-top:1px #242424 solid;
-  min-height: 56px;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-}
-
-.play-section__card-button-img {
-  transform: rotate(225deg);
 }
 
 .play-section__info {
   margin-top: 24px;
+}
+
+.play-section__heading {
+  padding: 16px 40px 0 16px;
 }
