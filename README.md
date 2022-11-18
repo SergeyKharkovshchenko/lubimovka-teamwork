@@ -22,12 +22,6 @@
 https://sergeykharkovshchenko.github.io/lubimovka-teamwork/
 
 
-## Для запуска
-
-Запустить index.html
-
-
-
 # Description
 
 Project for practicing team work in Github. Contributors:
@@ -50,9 +44,4 @@ Project for practicing team work in Github. Contributors:
 ## Build:
 
 https://sergeykharkovshchenko.github.io/lubimovka-teamwork/
-
-
-## To run
-
-Launch index.html
 
