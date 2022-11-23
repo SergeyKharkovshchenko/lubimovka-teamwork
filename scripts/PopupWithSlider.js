@@ -1,10 +1,10 @@
-import Popup from './Popup.js'
+import Popup from './Popup.js';
 
 export default class PopupWithSlider extends Popup {
   constructor(popupSelector, { removeListeners }) {
     super(popupSelector);
     this._sliderList = this._popup.querySelector('.slider__list');
-    this._removeListeners = removeListeners
+    this._removeListeners = removeListeners;
   }
   _removeAnimation() {
     this._sliderList.style.transition = '';
@@ -14,7 +14,7 @@ export default class PopupWithSlider extends Popup {
     super.open();
   }
   close() {
-    this._removeListeners()
+    this._removeListeners();
     super.close();
   }
 }

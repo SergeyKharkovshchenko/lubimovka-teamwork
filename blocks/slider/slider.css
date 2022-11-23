@@ -42,12 +42,12 @@
   padding: 0;
 }
 
-.slider__control-item-type_prev {
+.slider__control-item_type_prev {
   margin-left: -70px;
   transform: rotate(180deg);
 }
 
-.slider__control-item-type_next {
+.slider__control-item_type_next {
   margin-right: -70px;
 }
 
