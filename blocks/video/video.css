@@ -21,7 +21,8 @@
   padding-top: 57px;
 }
 
-.video__single {
+.video__wrapper {
+  position: relative;
   min-width: 299px;
   min-height: 168px;
   margin: 0 auto;
@@ -31,13 +32,94 @@
   max-height: 403px;
 }
 
+.video__button-shape {
+  fill: #212121;
+  fill-opacity: 0.8;
+}
+
+.video__wrapper:hover .video__button-shape,
+.video__button:focus .video__button-shape {
+  fill: #ff0000;
+  fill-opacity: 1;
+}
+
+.video--enabled {
+  cursor: pointer;
+}
+
+.video--enabled .video__button {
+  display: block;
+}
+
+.video__button-icon {
+  fill: #ffffff;
+}
+
+.video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: -webkit-fill-available;
+  border: none;
+}
+
+.video__button:focus {
+  outline: none;
+}
+
+.video__button {
+  display: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+}
+
 .three-video-section {
   margin-bottom: 100px;
 }
 
-@media screen and (min-width: 768px) {
+.video__screen {
+  width: 299px;
+  height: 166px;
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 530px) {
+  .video__screen {
+    margin-right: 59px;
+    max-height: 236px;
+    max-width: 420px;
+  }
+
+  .video__screen:last-child {
+    margin-right: 0;
+  }
+
+  .video__title {
+    margin: 0 auto 32px auto;
+    min-height: auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .video__title {
+    text-align: start;
+    max-width: 716px;
+  }
+}
+
+@media screen and (min-width: 880px) {
   .video {
     justify-content: center;
+    width: 100%;
+    height: 236px;
   }
 
   .video-section {
@@ -47,38 +129,23 @@
   .three-video-section {
     margin-bottom: 145px;
   }
-}
 
-.video__screen {
-  margin-right: 30px;
-  min-width: 299px;
-  min-height: 168px;
-  max-width: 420px;
-  max-height: 236px;
-}
-
-@media screen and (min-width: 768px) {
   .video__screen {
-    margin-right: 59px;
+    margin-right: 30px;
+    margin-left: 0;
+    width: 430px;
     height: 236px;
-    width: 420px;
+  }
+
+  .video__screen3 {
+    width: 299px;
+    height: 168px;
   }
 }
 
-.video__screen:last-child {
-  margin-right: 0;
-}
-
-.video__title {
-  margin: 0 auto 32px auto;
-  min-height: auto;
-  width: 90%;
-  text-align: center;
-}
-
-@media screen and (min-width: 530px) {
-  .video__title {
-    text-align: start;
-    max-width: 716px;
+@media screen and (min-width: 1320px) {
+  .video__screen3 {
+    width: 430px;
+    height: 236px;
   }
 }
