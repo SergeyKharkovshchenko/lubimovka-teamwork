@@ -40,5 +40,9 @@
 
 @import url(../blocks/footer/footer.css);
 
+@import url(../blocks/popup/popup.css);
+
+@import url(../blocks/slider/slider.css);
+
 /* for JS, must be at end */
 @import url(../blocks/box-for-horizontal-scroll/box-for-horizontal-scroll.css);
