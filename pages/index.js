@@ -12,8 +12,20 @@ const playSectionScrolling = new HorizontalScrollSection(
   'box-for-horizontal-scroll'
 );
 
+const twoVideoSectionScrolling = new HorizontalScrollSection(
+  '.two-video-section__wrapper',
+  'box-for-horizontal-scroll'
+);
+
+const threeVideoSectionScrolling = new HorizontalScrollSection(
+  '.three-video-section__wrapper',
+  'box-for-horizontal-scroll'
+);
+
 peopleScrolling.setScrollable();
 playSectionScrolling.setScrollable();
+twoVideoSectionScrolling.setScrollable();
+threeVideoSectionScrolling.setScrollable();
 
 const photo = document.querySelector('.photo-section');
 const image = Array.from(photo.querySelectorAll('.photo-section__list-img'));
@@ -36,3 +48,4 @@ const openSlider = (item) => {
   gallery.setEventListeners();
   popupSlider.open();
 };
+

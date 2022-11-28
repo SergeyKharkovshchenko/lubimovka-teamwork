@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Любимовка</title>
+    <link rel="stylesheet" href="pages/index.css" />
+    <script src="./scripts/mobileMenu.js" defer></script>
+    <script src="./pages/index.js" type="module" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Любимовка</title>
-  <link rel="stylesheet" href="pages/index.css">
-  <script src="./scripts/mobileMenu.js" defer></script>
-  <script src="./pages/index.js" type="module" defer></script>
-</head>
+  <body class="page">
+    <header class="header">
+      <a href="./index.html" class="logo header__logo">
+        <img
+          class="logo__img"
+          src="./images/logo.svg"
+          alt="Логотип Любимовка."
+        />
+      </a>
+      <button class="button button_type_arr-right-rtl header__button">
+        проекты
+      </button>
 
-<body class="page">
-  <header class="header">
-    <a href="./index.html" class="logo header__logo">
-      <img class="logo__img" src="./images/logo.svg" alt="Логотип Любимовка.">
-    </a>
-    <button class="button button_type_arr-right-rtl header__button">
-      проекты
-    </button>
-
-    <div class="header__menu">
-      <nav>
-        <ul class="header__menu-section header__menu-section_main">
+      <div class="header__menu">
+        <nav>
+          <ul class="header__menu-section header__menu-section_main">
+            <li>
+              <a href="./index.html" class="link-menu">Афиша</a>
+            </li>
+            <li>
+              <a href="./index.html" class="link-menu">Библиотека</a>
+            </li>
+            <li>
+              <a href="./index.html" class="link-menu">Проекты</a>
+            </li>
+            <li>
+              <a href="./index.html" class="link-menu">История</a>
+            </li>
+            <li>
+              <a href="./index.html" class="link-menu">Блог</a>
+            </li>
+            <li>
+              <a href="./index.html" class="link-menu">Новости</a>
+            </li>
+            <li>
+              <a href="./index.html" class="link-menu">О&nbsp;фестивале</a>
+            </li>
+            <li>
+              <a href="./index.html" class="link-menu">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__menu-section">
           <li>
-            <a href="./index.html" class="link-menu">Афиша</a>
+            <a href="#" class="link-menu" target="_blank">ytube</a>
           </li>
           <li>
-            <a href="./index.html" class="link-menu">Библиотека</a>
+            <a href="#" class="link-menu" target="_blank">tlgrm</a>
           </li>
           <li>
-            <a href="./index.html" class="link-menu">Проекты</a>
-          </li>
-          <li>
-            <a href="./index.html" class="link-menu">История</a>
-          </li>
-          <li>
-            <a href="./index.html" class="link-menu">Блог</a>
-          </li>
-          <li>
-            <a href="./index.html" class="link-menu">Новости</a>
-          </li>
-          <li>
-            <a href="./index.html" class="link-menu">О&nbsp;фестивале</a>
-          </li>
-          <li>
-            <a href="./index.html" class="link-menu">Контакты</a>
+            <a href="#" class="link-menu" target="_blank">vk</a>
           </li>
         </ul>
       </nav>
@@ -116,386 +131,862 @@
         <iframe class="video__screen" src="https://www.youtube.com/embed/tgbNymZ7vqY">
         </iframe>
       </div>
-    </section>
+      <button type="button" class="menu-button" aria-label="Меню.">
+        <div class="menu-button__burger"></div>
+      </button>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <h1 class="intro__title">Любимовка.Ещё</h1>
 
-    <section class="video-section three-video-section">
-      <h2 class="heading--medium video__title">
-        Заголовок блока с тремя видео
-      </h2>
-      <div class="video">
-        <iframe class="video__screen" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
-        <iframe class="video__screen" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
-        <iframe class="video__screen" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
-      </div>
-    </section>
-    <section class="photo-section">
-      <h2 class="heading photo-section__heading page__title">Заголовок блока<br> с фотографиями</h2>
-      <ul class="photo-section__list">
-        <li class="photo-section__list-item">
-          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 158.jpg" alt="Актёр на сцене">
-        </li>
-        <li class="photo-section__list-item">
-          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 160.jpg" alt="Фестиваль">
-        </li>
-        <li class="photo-section__list-item">
-          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 193.jpg" alt="2 актёра на сцене">
-        </li>
-        <li class="photo-section__list-item">
-          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 194.jpg" alt="Актриса на сцене">
-        </li>
-        <li class="photo-section__list-item">
-          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 195.jpg" alt="Фестиваль">
-        </li>
-        <li class="photo-section__list-item">
-          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 196.jpg" alt="Фестиваль">
-        </li>
-        <li class="photo-section__list-item">
-          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 197.jpg" alt="Актриса на сцене">
-        </li>
-        <li class="photo-section__list-item">
-          <img class="photo-section__list-img" src="./images/photo-section/Rectangle 198.jpg" alt="Актриса на сцене">
-        </li>
-      </ul>
-    </section>
-    <section class="performance-section">
-      <h2 class="heading performance-section__heading page__title">Заголовок блока<br>с тремя и более<br>спектаклями
-      </h2>
-      <ul class="performance-section__cards">
-        <li class="card-performance">
-          <img src="./images/performance-section/Rectangle 135.jpg" class="card-performance__img"
-            alt="Спектакль 'Про линя'">
-          <div class="card-performance__description">
-            <time class="card-performance__data body-text">
-              <span class="card-performance__day">15 декабря</span>
-              <span class="card-performance__time">11:00</span>
-            </time>
-            <h3 class="card-performance__title heading heading--medium">Про линя</h3>
-            <div class="card-performance__actors body-text body-text--small">
-              <p class="card-performance__actors-text">Драматург: Ольга Казакова</p>
-              <p class="card-performance__actors-text">Режиссёр: Катя Ганюшина</p>
-            </div>
-            <p class="card-performance__content body-text body-text--caption">читка проекта Любимовка.Ещё</p>
-          </div>
-          <div class="card-performance__buttons">
-            <button class="button button_type_arr-left-ltr card-performance__button">
-              О спектакле
-            </button>
-            <button class="button button_type_arr-left-ltr card-performance__button">
-              Билеты
-            </button>
-          </div>
-        </li>
-        <li class="card-performance">
-          <img src="./images/performance-section/Rectangle 135-1.jpg" class="card-performance__img"
-            alt="Спектакль 'Мама'">
-          <div class="card-performance__description">
-            <time class="card-performance__data body-text">
-              <span class="card-performance__day">15 декабря</span>
-              <span class="card-performance__time">11:00</span>
-            </time>
-            <h3 class="card-performance__title heading heading--medium">МАМА</h3>
-            <div class="card-performance__actors body-text body-text--small">
-              <p class="card-performance__actors-text">Драматург: Ольга Казакова</p>
-              <p class="card-performance__actors-text">Режиссёр: Катя Ганюшина</p>
-            </div>
-            <p class="card-performance__content body-text body-text--caption">читка проекта Любимовка.Ещё</p>
-          </div>
-          <div class="card-performance__buttons">
-            <button class="button button_type_arr-left-ltr card-performance__button">
-              О спектакле
-            </button>
-            <button class="button button_type_arr-left-ltr card-performance__button">
-              Билеты
-            </button>
-          </div>
-        </li>
-        <li class="card-performance">
-          <img src="./images/performance-section/Rectangle 135-2.jpg" class="card-performance__img"
-            alt="Спектакль 'Мама'">
-          <div class="card-performance__description">
-            <time class="card-performance__data body-text">
-              <span class="card-performance__day">15 декабря</span>
-              <span class="card-performance__time">11:00</span>
-            </time>
-            <h3 class="card-performance__title heading heading--medium">МАМА</h3>
-            <div class="card-performance__actors body-text body-text--small">
-              <p class="card-performance__actors-text">Драматург: Ольга Казакова</p>
-              <p class="card-performance__actors-text">Режиссёр: Катя Ганюшина</p>
-            </div>
-            <p class="card-performance__content body-text body-text--caption">читка проекта Любимовка.Ещё</p>
-          </div>
-          <div class="card-performance__buttons">
-            <button class="button button_type_arr-left-ltr card-performance__button">
-              О спектакле
-            </button>
-            <button class="button button_type_arr-left-ltr card-performance__button">
-              Билеты
-            </button>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="play-section">
-      <h2 class="heading page__title">Заголовок блока с пьесами</h2>
-      <div class="play-section__wrapper">
-        <div class="play-section__card">
-          <div class="play-section__inner">
-            <h3 class="heading heading--small">Конкретные разговоры пожилых супругов ни о чём</h3>
-            <div class="play-section__card-links">
-              <button class="play-section__card-button"><a target="_blank" href="#" class="link-menu">смотреть
-                  читку</a><img src="/images/arrow-down.svg" alt="ссылка"
-                  class="play-section__card-button-img"></button>
-              <button class="play-section__card-button"><a target="_blank" href="#" class="link-menu">скачать
-                  пьесу</a><img src="/images/arrow-down.svg" alt="ссылка"></button>
-            </div>
-          </div>
-          <div class="play-section__info">
-            <h4 class="heading heading--small">Екатерина Августеняк</h4>
-            <p class="body-text body-text--small">Санкт-Петербург</p>
-            <p class="body-text body-text--small">2020</p>
-          </div>
-        </div>
-
-        <div class="play-section__card">
-          <div class="play-section__inner">
-            <h3 class="heading heading--small">Солнечная линия</h3>
-            <div class="play-section__card-links">
-              <button class="play-section__card-button"><a target="_blank" href="#" class="link-menu">смотреть
-                  читку</a><img src="/images/arrow-down.svg" alt="ссылка"
-                  class="play-section__card-button-img"></button>
-              <button class="play-section__card-button"><a target="_blank" href="#" class="link-menu">скачать
-                  пьесу</a><img src="/images/arrow-down.svg" alt="ссылка"></button>
-            </div>
-          </div>
-          <div class="play-section__info">
-            <h4 class="heading heading--small">Екатерина Августеняк</h4>
-            <p class="body-text body-text--small">Санкт-Петербург</p>
-            <p class="body-text body-text--small">2020</p>
-          </div>
-        </div>
-
-        <div class="play-section__card">
-          <div class="play-section__inner">
-            <h3 class="heading heading--small">МАМА</h3>
-            <div class="play-section__card-links">
-              <button class="play-section__card-button"><a target="_blank" href="#" class="link-menu">смотреть
-                  читку</a><img src="/images/arrow-down.svg" alt="ссылка"
-                  class="play-section__card-button-img"></button>
-              <button class="play-section__card-button"><a target="_blank" href="#" class="link-menu">скачать
-                  пьесу</a><img src="/images/arrow-down.svg" alt="ссылка"></button>
-            </div>
-          </div>
-          <div class="play-section__info">
-            <h4 class="heading heading--small">Екатерина Августеняк</h4>
-            <p class="body-text body-text--small">Санкт-Петербург</p>
-            <p class="body-text body-text--small">2020</p>
-          </div>
-        </div>
-
-        <div class="play-section__card">
-          <div class="play-section__inner">
-            <h3 class="heading heading--small">Опус ДНК</h3>
-            <div class="play-section__card-links">
-              <button class="play-section__card-button"><a target="_blank" href="#" class="link-menu">смотреть
-                  читку</a><img src="/images/arrow-down.svg" alt="ссылка"
-                  class="play-section__card-button-img"></button>
-              <button class="play-section__card-button"><a target="_blank" href="#" class="link-menu">скачать
-                  пьесу</a><img src="/images/arrow-down.svg" alt="ссылка"></button>
-            </div>
-          </div>
-          <div class="play-section__info">
-            <h4 class="heading heading--small">Екатерина Августеняк</h4>
-            <p class="body-text body-text--small">Санкт-Петербург</p>
-            <p class="body-text body-text--small">2020</p>
-          </div>
-        </div>
-
-        <div class="play-section__card">
-          <div class="play-section__inner">
-            <h3 class="heading heading--small">МАМА</h3>
-            <div class="play-section__card-links">
-              <button class="play-section__card-button"><a target="_blank" href="#" class="link-menu">смотреть
-                  читку</a><img src="/images/arrow-down.svg" alt="ссылка"
-                  class="play-section__card-button-img"></button>
-              <button class="play-section__card-button"><a target="_blank" href="#" class="link-menu">скачать
-                  пьесу</a><img src="/images/arrow-down.svg" alt="ссылка"></button>
-            </div>
-          </div>
-          <div class="play-section__info">
-            <h4 class="heading heading--small">Екатерина Августеняк</h4>
-            <p class="body-text body-text--small">Санкт-Петербург</p>
-            <p class="body-text body-text--small">2020</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="people-section">
-      <h2 class="heading page__title people-section__heading">Заголовок блока<br>с&nbsp;персонами</h2>
-      <div class="scrolling-fog-wrapper" style="--fog-width: 25px">
-        <div class="people-section__peoples">
-          <article class="card-people">
-            <img src="./images/people-tereza-shimchak.webp" alt="" class="card-people__img">
-            <h3 class="heading heading--constant-size card-people__heading">Тереза<br>Шимчак</h3>
-            <p class="body-text body-text--small card-people__text">Драматург, сценарист, преподаватель</p>
-          </article>
-          <article class="card-people">
-            <img src="./images/people-cool-man.webp" alt="" class="card-people__img">
-            <h3 class="heading heading--constant-size card-people__heading">Тереза<br>Шимчак</h3>
-            <p class="body-text body-text--small card-people__text">Драматург, сценарист, преподаватель</p>
-          </article>
-          <article class="card-people">
-            <img src="./images/people-sexy-chick.webp" alt="" class="card-people__img">
-            <h3 class="heading heading--constant-size card-people__heading">Тереза<br>Шимчак</h3>
-            <p class="body-text body-text--small card-people__text">Драматург, сценарист, преподаватель</p>
-          </article>
-          <article class="card-people">
-            <img src="./images/people-tereza-shimchak.webp" alt="" class="card-people__img">
-            <h3 class="heading heading--constant-size card-people__heading">Тереза<br>Шимчак</h3>
-            <p class="body-text body-text--small card-people__text">Драматург, сценарист, преподаватель</p>
-          </article>
-          <article class="card-people">
-            <img src="./images/people-cool-man.webp" alt="" class="card-people__img">
-            <h3 class="heading heading--constant-size card-people__heading">Тереза<br>Шимчак</h3>
-            <p class="body-text body-text--small card-people__text">Драматург, сценарист, преподаватель</p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="button-link-section">
-      <h2 class="heading page__title button-link-section__heading">
-        Заголовок блока<br>с&nbsp;кнопкой/ссылкой
-      </h2>
-      <div class="button-link-section__content-box">
-        <p class="body-text button-link-section__text-content">Видео прошедших мероприятий можно посмотреть
-          в&nbsp;плейлисте на&nbsp;канале Любимовки в&nbsp;YouTube</p>
-        <a href="https://www.youtube.com/"
-          class="button button_size_big button_type_big-arr-ltr button-link-section__button" target="_blank">youtube</a>
-      </div>
-    </section>
-    <section class="cooperation-section">
-      <h2 class="heading heading--medium heading_star cooperation-section__heading">
-        Проект открыт<br>к&nbsp;сотрудничеству
-      </h2>
-      <p class="heading heading--small cooperation-section__paragraph">
-        Мы&nbsp;находимся в&nbsp;постоянном поиске режиссёров и&nbsp;актёров, заинтересованных в&nbsp;постаноке читок.
-      </p>
-      <p class="heading heading--small cooperation-section__paragraph">
-        Пишите на <a class="link-text" href="mailto:more@lubimovka.ru" target="_blank">more@lubimovka.ru</a>
-      </p>
-    </section>
-  </main>
-  <footer class="footer">
-    <img src="./images/footer logo.svg" class="footer__logo" alt="Любимовка">
-    <div class="footer__address">
-      <h3 class="footer__address-header heading heading--small">Площадка «8/3»</h3>
-      <p class="footer__address-text body-text body-text--small">Москва, ул.&nbsp;Казакова,&nbsp;8,&nbsp;стр.&nbsp;3
-        Метро&nbsp;«Курская»</p>
-    </div>
-    <nav class="footer__menu body-text">
-      <ul class="footer__menu-list">
-        <li class="footer__mune-item"><a class="footer__link" href="#">Любимовка</a></li>
-        <li class="footer__mune-item"><a class="footer__link" href="#">Афиша</a></li>
-        <li class="footer__mune-item"><a class="footer__link" href="#">Библиотека</a></li>
-        <li class="footer__mune-item"><a class="footer__link" href="#">Блог</a></li>
-        <li class="footer__mune-item"><a class="footer__link" href="#">Новости</a></li>
-      </ul>
-      <ul class="footer__menu-list">
-        <li class="footer__mune-item"><a class="footer__link" href="#">О фестивале</a></li>
-        <li class="footer__mune-item"><a class="footer__link" href="#">Организаторы</a></li>
-        <li class="footer__mune-item"><a class="footer__link" href="#">История</a></li>
-        <li class="footer__mune-item"><a class="footer__link" href="#">Контакты</a></li>
-        <li class="footer__mune-item"><a class="footer__link" href="#">Для прессы</a></li>
-      </ul>
-    </nav>
-    <ul class="footer__project body-text">
-      <li class="footer__project-item"><a class="footer__link" href="#">Все проекты</a></li>
-      <li class="footer__project-item"><a class="footer__link" href="#">Любимовка.Ещё</a></li>
-      <li class="footer__project-item"><a class="footer__link" href="#">Спектакли</a></li>
-      <li class="footer__project-item"><a class="footer__link" href="#">Сборник Любимовка.Пьесы</a></li>
-      <li class="footer__project-item"><a class="footer__link" href="#">Lark+Любимовка</a></li>
-      <li class="footer__project-item"><a class="footer__link" href="#">Практика постдраматурга</a></li>
-      <li class="footer__project-item"><a class="footer__link" href="#">Эхо Любимовки</a></li>
-    </ul>
-    <div class="footer__partners">
-      <div class="footer__partners-block footer__partners-block_type_desktop">
-        <p class="footer__partners-text body-text footer__parters-text_type_desktop">Генеральный партнёр</p>
-      </div>
-      <div class="footer__partners-block">
-        <a href="https://www.prokhorovfund.ru/" class="footer__partners-link" target="_blank"><img
-            class="footer__partners-logo" src="./images/partners/Фонд Михаила Прохорова.jpg"
-            alt="Фонд Михаила Прохорова"></a>
-        <p class="footer__partners-text body-text">Генеральный партнёр</p>
-      </div>
-      <a href="https://www.brewhouse.pro/" class="footer__partners-link" target="_blank"><img
-          class="footer__partners-logo" src="./images/partners/Mosbrew brewhouse project.jpg"
-          alt="Mosbrew brewhouse project"></a>
-      <div class="footer__partners-block">
-        <a href="https://sbtg.ru/" class="footer__partners-link" target="_blank"><img class="footer__partners-logo"
-            src="./images/partners/SBTG Онлайн-трансляции.jpg" alt="SBTG Онлайн-трансляции"></a>
-        <p class="footer__partners-text  body-text">Онлайн-трансляции</p>
-      </div>
-      <a href="https://www.youtube.com/channel/UCp2J7GRxQ36QLqW4ReLLt5g" class="footer__partners-link"
-        target="_blank"><img class="footer__partners-logo" src="./images/partners/А Поговорить.jpg"
-          alt="А Поговорить"></a>
-    </div>
-    <div class="footer__copyright body-text body-text--caption">
-      <div class="footer__copyright-block">
-        <p class="footer__copyright-text footer__copyright-text_position_top">&copy Любимовка, 2021</p>
-        <a class="footer__copyright-link" href="#" target="_blank">Политика конфиденциальности</a>
-      </div>
-      <div class="footer__copyright-block">
-        <div class="footer__designers">
-          <img class="footer__designers-img" src="./images/footer__copyright-designers.svg"
-            alt="Логотип Shishki.collective">
-          <p class="footer__copyright-text">дизайн сайта —<br><a class="footer__copyright-link"
-              href="https://shishki.co/" target="_blank">shishki.collective</a>
+        <div class="intro__wrapper">
+          <p class="intro__text">
+            Межсезонные читки и&nbsp;обсуждение пьес из&nbsp;списка отмеченных
+            отборщиками Любимовки. Можно слушать, обсуждать и&nbsp;даже
+            участвовать.<span class="intro__text-hider"
+              >Можно слушать, обсуждать и даже участвовать.</span
+            >
           </p>
+          <img
+            class="intro__photo"
+            src="/images/title foto cropped.webp"
+            alt="фото"
+          />
         </div>
-        <div class="footer__developers">
-          <p class="footer__copyright-text">вёрстка и разработака — студенты<br><a class="footer__copyright-link"
-              href="https://practicum.yandex.ru/" target="_blank">Яндекс.Практикума</a>
-          </p>
+      </section>
+      <section class="about">
+        <h2 class="section-title section-title_about">О проекте</h2>
+        <p class="about__description">
+          За первый сезон проекта организаторы провели 17 мероприятий вместе с
+          режиссёрами и актёрами московских театров: Театра.doc, Театрального
+          Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра
+          «Станиславский», Ленкома.
+        </p>
+      </section>
+      <section class="video-section">
+        <h2 class="heading heading--medium video__title">
+          Заголовок блока с видео
+        </h2>
+        <div class="video__wrapper video--enabled">
+          <a
+            class="video__link"
+            href="https://www.youtube.com/embed/tgbNymZ7vqY"
+          >
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  https://i.ytimg.com/vi_webp/tgbNymZ7vqY/maxresdefault.webp
+                "
+              />
+              <img
+                class="video__media"
+                src="https://i.ytimg.com/vi/tgbNymZ7vqY/maxresdefault.jpg"
+                alt="видео со спектаклем"
+              />
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg width="68" height="48" viewBox="0 0 68 48">
+              <path
+                class="video__button-shape"
+                d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+              ></path>
+              <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+            </svg>
+          </button>
         </div>
-      </div>
-    </div>
-  </footer>
-  <div class="popup popup_open_img ">
-    <div class="slider">
-      <div class="slider__control">
-        <button type="button" class="slider__control-item slider__control-item_type_prev"
-          aria-label="Предыдущий слайд"></button>
-        <button type="button" class="slider__control-item slider__control-item_type_next"
-          aria-label="Слудующий слайд"></button>
-      </div>
-      <button type="button" class="slider__button-close" aria-label="Закрыть галлерею"></button>
-      <div class="slider__box">
-        <ul class="slider__list">
-          <li class="slider__list-item"><img class="slider__list-img" src="./images/photo-section/Rectangle 158.jpg"
-              alt="Актёр на сцене"></li>
-          <li class="slider__list-item"><img class="slider__list-img" src="./images/photo-section/Rectangle 160.jpg"
-              alt="Фестиваль"></li>
-          <li class="slider__list-item"><img class="slider__list-img" src="./images/photo-section/Rectangle 193.jpg"
-              alt="2 актёра на сцене"></li>
-          <li class="slider__list-item"><img class="slider__list-img" src="./images/photo-section/Rectangle 194.jpg"
-              alt="Актриса на сцене"></li>
-          <li class="slider__list-item"><img class="slider__list-img" src="./images/photo-section/Rectangle 195.jpg"
-              alt="Фестиваль"></li>
-          <li class="slider__list-item"><img class="slider__list-img" src="./images/photo-section/Rectangle 196.jpg"
-              alt="Фестиваль"></li>
-          <li class="slider__list-item"><img class="slider__list-img" src="./images/photo-section/Rectangle 197.jpg"
-              alt="Актриса на сцене"></li>
-          <li class="slider__list-item"><img class="slider__list-img" src="./images/photo-section/Rectangle 198.jpg"
-              alt="Актриса на сцене"></li>
+
+        <p class="body-text video__text">
+          Из этого следует два вывода: с одной стороны, искусство не должно быть
+          равно реальности, потому что иначе оно не будет искусством, с другой
+          стороны – оно должно быть все-таки подобно реальности, иначе мы ничего
+          не поймем, не подключимся и не распознаем замыслы автора. Мне нравится
+          такое определение, что один из видов эстетики – это, грубо говоря,
+          "понимание" чего-то. Если нам нечего понимать, то мы не получим ни
+          удовольствия, ни какого-то чувства, ничего. А для того, чтобы что-то
+          понять, нам должно быть представлено что-то, что не равно само себе.
+          То есть нам показывают или говорят что-то, а мы понимаем, что там есть
+          что-то еще. Вот мы смотрим на античную статую и понимаем, что это –
+          статуя, но похожа на человека. Если она будет абсолютно такая же как
+          человек, как восковая фигура, то мы поймем, что это уже не искусство.
+          Искусство для того, чтобы люди догадались, домыслили, дочувствовали
+          что-то.
+        </p>
+      </section>
+      <section class="video-section two-video-section">
+        <h2 class="heading--medium video__title">
+          Заголовок блока с двумя видео
+        </h2>
+
+        <div class="video two-video-section__wrapper">
+          <div class="video__wrapper video--enabled video__screen">
+            <a
+              class="video__link"
+              href="https://www.youtube.com/embed/tgbNymZ7vqY"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    https://i.ytimg.com/vi_webp/tgbNymZ7vqY/maxresdefault.webp
+                  "
+                />
+                <img
+                  class="video__media"
+                  src="https://i.ytimg.com/vi/tgbNymZ7vqY/maxresdefault.jpg"
+                  alt="видео со спектаклем"
+                />
+              </picture>
+            </a>
+            <button class="video__button" aria-label="Запустить видео">
+              <svg width="68" height="48" viewBox="0 0 68 48">
+                <path
+                  class="video__button-shape"
+                  d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                ></path>
+                <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="video__wrapper video--enabled video__screen">
+            <a
+              class="video__link"
+              href="https://www.youtube.com/embed/tgbNymZ7vqY"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    https://i.ytimg.com/vi_webp/tgbNymZ7vqY/maxresdefault.webp
+                  "
+                />
+                <img
+                  class="video__media"
+                  src="https://i.ytimg.com/vi/tgbNymZ7vqY/maxresdefault.jpg"
+                  alt="видео со спектаклем"
+                />
+              </picture>
+            </a>
+            <button class="video__button" aria-label="Запустить видео">
+              <svg width="68" height="48" viewBox="0 0 68 48">
+                <path
+                  class="video__button-shape"
+                  d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                ></path>
+                <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section three-video-section">
+        <h2 class="heading--medium video__title">
+          Заголовок блока с тремя видео
+        </h2>
+        <div class="video three-video-section__wrapper">
+          <div
+            class="video__wrapper video--enabled video__screen video__screen3"
+          >
+            <a
+              class="video__link"
+              href="https://www.youtube.com/embed/tgbNymZ7vqY"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    https://i.ytimg.com/vi_webp/tgbNymZ7vqY/maxresdefault.webp
+                  "
+                />
+                <img
+                  class="video__media"
+                  src="https://i.ytimg.com/vi/tgbNymZ7vqY/maxresdefault.jpg"
+                  alt="видео со спектаклем"
+                />
+              </picture>
+            </a>
+            <button class="video__button" aria-label="Запустить видео">
+              <svg width="68" height="48" viewBox="0 0 68 48">
+                <path
+                  class="video__button-shape"
+                  d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                ></path>
+                <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="video__wrapper video--enabled video__screen video__screen3"
+          >
+            <a
+              class="video__link"
+              href="https://www.youtube.com/embed/tgbNymZ7vqY"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    https://i.ytimg.com/vi_webp/tgbNymZ7vqY/maxresdefault.webp
+                  "
+                />
+                <img
+                  class="video__media"
+                  src="https://i.ytimg.com/vi/tgbNymZ7vqY/maxresdefault.jpg"
+                  alt="видео со спектаклем"
+                />
+              </picture>
+
+              <button class="video__button" aria-label="Запустить видео">
+                <svg width="68" height="48" viewBox="0 0 68 48">
+                  <path
+                    class="video__button-shape"
+                    d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                  ></path>
+                  <path
+                    class="video__button-icon"
+                    d="M 45,24 27,14 27,34"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+
+          <div
+            class="video__wrapper video--enabled video__screen video__screen3"
+          >
+            <a
+              class="video__link"
+              href="https://www.youtube.com/embed/tgbNymZ7vqY"
+            >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    https://i.ytimg.com/vi_webp/tgbNymZ7vqY/maxresdefault.webp
+                  "
+                />
+                <img
+                  class="video__media"
+                  src="https://i.ytimg.com/vi/tgbNymZ7vqY/maxresdefault.jpg"
+                  alt="видео со спектаклем"
+                />
+              </picture>
+
+              <button class="video__button" aria-label="Запустить видео">
+                <svg width="68" height="48" viewBox="0 0 68 48">
+                  <path
+                    class="video__button-shape"
+                    d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                  ></path>
+                  <path
+                    class="video__button-icon"
+                    d="M 45,24 27,14 27,34"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="photo-section">
+        <h2 class="heading photo-section__heading page__title">
+          Заголовок блока<br />
+          с фотографиями
+        </h2>
+        <ul class="photo-section__list">
+          <li class="photo-section__list-item">
+            <img
+              class="photo-section__list-img"
+              src="./images/photo-section/Rectangle 158.jpg"
+              alt="Актёр на сцене"
+            />
+          </li>
+          <li class="photo-section__list-item">
+            <img
+              class="photo-section__list-img"
+              src="./images/photo-section/Rectangle 160.jpg"
+              alt="Фестиваль"
+            />
+          </li>
+          <li class="photo-section__list-item">
+            <img
+              class="photo-section__list-img"
+              src="./images/photo-section/Rectangle 193.jpg"
+              alt="2 актёра на сцене"
+            />
+          </li>
+          <li class="photo-section__list-item">
+            <img
+              class="photo-section__list-img"
+              src="./images/photo-section/Rectangle 194.jpg"
+              alt="Актриса на сцене"
+            />
+          </li>
+          <li class="photo-section__list-item">
+            <img
+              class="photo-section__list-img"
+              src="./images/photo-section/Rectangle 195.jpg"
+              alt="Фестиваль"
+            />
+          </li>
+          <li class="photo-section__list-item">
+            <img
+              class="photo-section__list-img"
+              src="./images/photo-section/Rectangle 196.jpg"
+              alt="Фестиваль"
+            />
+          </li>
+          <li class="photo-section__list-item">
+            <img
+              class="photo-section__list-img"
+              src="./images/photo-section/Rectangle 197.jpg"
+              alt="Актриса на сцене"
+            />
+          </li>
+          <li class="photo-section__list-item">
+            <img
+              class="photo-section__list-img"
+              src="./images/photo-section/Rectangle 198.jpg"
+              alt="Актриса на сцене"
+            />
+          </li>
         </ul>
+      </section>
+      <section class="performance-section">
+        <h2 class="heading performance-section__heading page__title">
+          Заголовок блока<br />с тремя и более<br />спектаклями
+        </h2>
+        <ul class="performance-section__cards">
+          <li class="card-performance">
+            <img
+              src="./images/performance-section/Rectangle 135.jpg"
+              class="card-performance__img"
+              alt="Спектакль 'Про линя'"
+            />
+            <div class="card-performance__description">
+              <time class="card-performance__data body-text">
+                <span class="card-performance__day">15 декабря</span>
+                <span class="card-performance__time">11:00</span>
+              </time>
+              <h3 class="card-performance__title heading heading--medium">
+                Про линя
+              </h3>
+              <div class="card-performance__actors body-text body-text--small">
+                <p class="card-performance__actors-text">
+                  Драматург: Ольга Казакова
+                </p>
+                <p class="card-performance__actors-text">
+                  Режиссёр: Катя Ганюшина
+                </p>
+              </div>
+              <p class="card-performance__content body-text body-text--caption">
+                читка проекта Любимовка.Ещё
+              </p>
+            </div>
+            <div class="card-performance__buttons">
+              <button
+                class="button button_type_arr-left-ltr card-performance__button"
+              >
+                О спектакле
+              </button>
+              <button
+                class="button button_type_arr-left-ltr card-performance__button"
+              >
+                Билеты
+              </button>
+            </div>
+          </li>
+          <li class="card-performance">
+            <img
+              src="./images/performance-section/Rectangle 135-1.jpg"
+              class="card-performance__img"
+              alt="Спектакль 'Мама'"
+            />
+            <div class="card-performance__description">
+              <time class="card-performance__data body-text">
+                <span class="card-performance__day">15 декабря</span>
+                <span class="card-performance__time">11:00</span>
+              </time>
+              <h3 class="card-performance__title heading heading--medium">
+                МАМА
+              </h3>
+              <div class="card-performance__actors body-text body-text--small">
+                <p class="card-performance__actors-text">
+                  Драматург: Ольга Казакова
+                </p>
+                <p class="card-performance__actors-text">
+                  Режиссёр: Катя Ганюшина
+                </p>
+              </div>
+              <p class="card-performance__content body-text body-text--caption">
+                читка проекта Любимовка.Ещё
+              </p>
+            </div>
+            <div class="card-performance__buttons">
+              <button
+                class="button button_type_arr-left-ltr card-performance__button"
+              >
+                О спектакле
+              </button>
+              <button
+                class="button button_type_arr-left-ltr card-performance__button"
+              >
+                Билеты
+              </button>
+            </div>
+          </li>
+          <li class="card-performance">
+            <img
+              src="./images/performance-section/Rectangle 135-2.jpg"
+              class="card-performance__img"
+              alt="Спектакль 'Мама'"
+            />
+            <div class="card-performance__description">
+              <time class="card-performance__data body-text">
+                <span class="card-performance__day">15 декабря</span>
+                <span class="card-performance__time">11:00</span>
+              </time>
+              <h3 class="card-performance__title heading heading--medium">
+                МАМА
+              </h3>
+              <div class="card-performance__actors body-text body-text--small">
+                <p class="card-performance__actors-text">
+                  Драматург: Ольга Казакова
+                </p>
+                <p class="card-performance__actors-text">
+                  Режиссёр: Катя Ганюшина
+                </p>
+              </div>
+              <p class="card-performance__content body-text body-text--caption">
+                читка проекта Любимовка.Ещё
+              </p>
+            </div>
+            <div class="card-performance__buttons">
+              <button
+                class="button button_type_arr-left-ltr card-performance__button"
+              >
+                О спектакле
+              </button>
+              <button
+                class="button button_type_arr-left-ltr card-performance__button"
+              >
+                Билеты
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="play-section">
+        <h2 class="heading page__title">Заголовок блока с пьесами</h2>
+        <div class="play-section__wrapper">
+          <div class="play-section__card">
+            <div class="play-section__inner">
+              <h3 class="heading heading--small">
+                Конкретные разговоры пожилых супругов ни о чём
+              </h3>
+              <div class="play-section__card-links">
+                <button class="play-section__card-button">
+                  <a target="_blank" href="#" class="link-menu"
+                    >смотреть читку</a
+                  ><img
+                    src="/images/arrow-down.svg"
+                    alt="ссылка"
+                    class="play-section__card-button-img"
+                  />
+                </button>
+                <button class="play-section__card-button">
+                  <a target="_blank" href="#" class="link-menu">скачать пьесу</a
+                  ><img src="/images/arrow-down.svg" alt="ссылка" />
+                </button>
+              </div>
+            </div>
+            <div class="play-section__info">
+              <h4 class="heading heading--small">Екатерина Августеняк</h4>
+              <p class="body-text body-text--small">Санкт-Петербург</p>
+              <p class="body-text body-text--small">2020</p>
+            </div>
+          </div>
+          <div class="play-section__card">
+            <div class="play-section__inner">
+              <h3 class="heading heading--small">Солнечная линия</h3>
+              <div class="play-section__card-links">
+                <button class="play-section__card-button">
+                  <a target="_blank" href="#" class="link-menu"
+                    >смотреть читку</a
+                  ><img
+                    src="/images/arrow-down.svg"
+                    alt="ссылка"
+                    class="play-section__card-button-img"
+                  />
+                </button>
+                <button class="play-section__card-button">
+                  <a target="_blank" href="#" class="link-menu">скачать пьесу</a
+                  ><img src="/images/arrow-down.svg" alt="ссылка" />
+                </button>
+              </div>
+            </div>
+            <div class="play-section__info">
+              <h4 class="heading heading--small">Екатерина Августеняк</h4>
+              <p class="body-text body-text--small">Санкт-Петербург</p>
+              <p class="body-text body-text--small">2020</p>
+            </div>
+          </div>
+          <div class="play-section__card">
+            <div class="play-section__inner">
+              <h3 class="heading heading--small">МАМА</h3>
+              <div class="play-section__card-links">
+                <button class="play-section__card-button">
+                  <a target="_blank" href="#" class="link-menu"
+                    >смотреть читку</a
+                  ><img
+                    src="/images/arrow-down.svg"
+                    alt="ссылка"
+                    class="play-section__card-button-img"
+                  />
+                </button>
+                <button class="play-section__card-button">
+                  <a target="_blank" href="#" class="link-menu">скачать пьесу</a
+                  ><img src="/images/arrow-down.svg" alt="ссылка" />
+                </button>
+              </div>
+            </div>
+            <div class="play-section__info">
+              <h4 class="heading heading--small">Екатерина Августеняк</h4>
+              <p class="body-text body-text--small">Санкт-Петербург</p>
+              <p class="body-text body-text--small">2020</p>
+            </div>
+          </div>
+
+          <div class="play-section__card">
+            <div class="play-section__inner">
+              <h3 class="heading heading--small">Опус ДНК</h3>
+              <div class="play-section__card-links">
+                <button class="play-section__card-button">
+                  <a target="_blank" href="#" class="link-menu"
+                    >смотреть читку</a
+                  ><img
+                    src="/images/arrow-down.svg"
+                    alt="ссылка"
+                    class="play-section__card-button-img"
+                  />
+                </button>
+                <button class="play-section__card-button">
+                  <a target="_blank" href="#" class="link-menu">скачать пьесу</a
+                  ><img src="/images/arrow-down.svg" alt="ссылка" />
+                </button>
+              </div>
+            </div>
+            <div class="play-section__info">
+              <h4 class="heading heading--small">Екатерина Августеняк</h4>
+              <p class="body-text body-text--small">Санкт-Петербург</p>
+              <p class="body-text body-text--small">2020</p>
+            </div>
+          </div>
+
+          <div class="play-section__card">
+            <div class="play-section__inner">
+              <h3 class="heading heading--small">МАМА</h3>
+              <div class="play-section__card-links">
+                <button class="play-section__card-button">
+                  <a target="_blank" href="#" class="link-menu"
+                    >смотреть читку</a
+                  ><img
+                    src="/images/arrow-down.svg"
+                    alt="ссылка"
+                    class="play-section__card-button-img"
+                  />
+                </button>
+                <button class="play-section__card-button">
+                  <a target="_blank" href="#" class="link-menu">скачать пьесу</a
+                  ><img src="/images/arrow-down.svg" alt="ссылка" />
+                </button>
+              </div>
+            </div>
+            <div class="play-section__info">
+              <h4 class="heading heading--small">Екатерина Августеняк</h4>
+              <p class="body-text body-text--small">Санкт-Петербург</p>
+              <p class="body-text body-text--small">2020</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="people-section">
+        <h2 class="heading page__title people-section__heading">
+          Заголовок блока<br />с&nbsp;персонами
+        </h2>
+        <div class="scrolling-fog-wrapper" style="--fog-width: 25px">
+          <div class="people-section__peoples">
+            <article class="card-people">
+              <img
+                src="./images/people-tereza-shimchak.webp"
+                alt=""
+                class="card-people__img"
+              />
+              <h3 class="heading heading--constant-size card-people__heading">
+                Тереза<br />Шимчак
+              </h3>
+              <p class="body-text body-text--small card-people__text">
+                Драматург, сценарист, преподаватель
+              </p>
+            </article>
+            <article class="card-people">
+              <img
+                src="./images/people-cool-man.webp"
+                alt=""
+                class="card-people__img"
+              />
+              <h3 class="heading heading--constant-size card-people__heading">
+                Тереза<br />Шимчак
+              </h3>
+              <p class="body-text body-text--small card-people__text">
+                Драматург, сценарист, преподаватель
+              </p>
+            </article>
+            <article class="card-people">
+              <img
+                src="./images/people-sexy-chick.webp"
+                alt=""
+                class="card-people__img"
+              />
+              <h3 class="heading heading--constant-size card-people__heading">
+                Тереза<br />Шимчак
+              </h3>
+              <p class="body-text body-text--small card-people__text">
+                Драматург, сценарист, преподаватель
+              </p>
+            </article>
+            <article class="card-people">
+              <img
+                src="./images/people-tereza-shimchak.webp"
+                alt=""
+                class="card-people__img"
+              />
+              <h3 class="heading heading--constant-size card-people__heading">
+                Тереза<br />Шимчак
+              </h3>
+              <p class="body-text body-text--small card-people__text">
+                Драматург, сценарист, преподаватель
+              </p>
+            </article>
+            <article class="card-people">
+              <img
+                src="./images/people-cool-man.webp"
+                alt=""
+                class="card-people__img"
+              />
+              <h3 class="heading heading--constant-size card-people__heading">
+                Тереза<br />Шимчак
+              </h3>
+              <p class="body-text body-text--small card-people__text">
+                Драматург, сценарист, преподаватель
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="button-link-section">
+        <h2 class="heading page__title button-link-section__heading">
+          Заголовок блока<br />с&nbsp;кнопкой/ссылкой
+        </h2>
+        <div class="button-link-section__content-box">
+          <p class="body-text button-link-section__text-content">
+            Видео прошедших мероприятий можно посмотреть в&nbsp;плейлисте
+            на&nbsp;канале Любимовки в&nbsp;YouTube
+          </p>
+          <a
+            href="https://www.youtube.com/"
+            class="button button_size_big button_type_big-arr-ltr button-link-section__button"
+            target="_blank"
+            >youtube</a
+          >
+        </div>
+      </section>
+      <section class="cooperation-section">
+        <h2
+          class="heading heading--medium heading_star cooperation-section__heading"
+        >
+          Проект открыт<br />к&nbsp;сотрудничеству
+        </h2>
+        <p class="heading heading--small cooperation-section__paragraph">
+          Мы&nbsp;находимся в&nbsp;постоянном поиске режиссёров и&nbsp;актёров,
+          заинтересованных в&nbsp;постаноке читок.
+        </p>
+        <p class="heading heading--small cooperation-section__paragraph">
+          Пишите на
+          <a class="link-text" href="mailto:more@lubimovka.ru" target="_blank"
+            >more@lubimovka.ru</a
+          >
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <img
+        src="./images/footer logo.svg"
+        class="footer__logo"
+        alt="Любимовка"
+      />
+      <div class="footer__address">
+        <h3 class="footer__address-header heading heading--small">
+          Площадка «8/3»
+        </h3>
+        <p class="footer__address-text body-text body-text--small">
+          Москва, ул.&nbsp;Казакова,&nbsp;8,&nbsp;стр.&nbsp;3
+          Метро&nbsp;«Курская»
+        </p>
       </div>
-
-    </div>
-  </div>
-
-</body>
-
+      <nav class="footer__menu body-text">
+        <ul class="footer__menu-list">
+          <li class="footer__mune-item">
+            <a class="footer__link" href="#">Любимовка</a>
+          </li>
+          <li class="footer__mune-item">
+            <a class="footer__link" href="#">Афиша</a>
+          </li>
+          <li class="footer__mune-item">
+            <a class="footer__link" href="#">Библиотека</a>
+          </li>
+          <li class="footer__mune-item">
+            <a class="footer__link" href="#">Блог</a>
+          </li>
+          <li class="footer__mune-item">
+            <a class="footer__link" href="#">Новости</a>
+          </li>
+        </ul>
+        <ul class="footer__menu-list">
+          <li class="footer__mune-item">
+            <a class="footer__link" href="#">О фестивале</a>
+          </li>
+          <li class="footer__mune-item">
+            <a class="footer__link" href="#">Организаторы</a>
+          </li>
+          <li class="footer__mune-item">
+            <a class="footer__link" href="#">История</a>
+          </li>
+          <li class="footer__mune-item">
+            <a class="footer__link" href="#">Контакты</a>
+          </li>
+          <li class="footer__mune-item">
+            <a class="footer__link" href="#">Для прессы</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__project body-text">
+        <li class="footer__project-item">
+          <a class="footer__link" href="#">Все проекты</a>
+        </li>
+        <li class="footer__project-item">
+          <a class="footer__link" href="#">Любимовка.Ещё</a>
+        </li>
+        <li class="footer__project-item">
+          <a class="footer__link" href="#">Спектакли</a>
+        </li>
+        <li class="footer__project-item">
+          <a class="footer__link" href="#">Сборник Любимовка.Пьесы</a>
+        </li>
+        <li class="footer__project-item">
+          <a class="footer__link" href="#">Lark+Любимовка</a>
+        </li>
+        <li class="footer__project-item">
+          <a class="footer__link" href="#">Практика постдраматурга</a>
+        </li>
+        <li class="footer__project-item">
+          <a class="footer__link" href="#">Эхо Любимовки</a>
+        </li>
+      </ul>
+      <div class="footer__partners">
+        <div class="footer__partners-block footer__partners-block_type_desktop">
+          <p
+            class="footer__partners-text body-text footer__parters-text_type_desktop"
+          >
+            Генеральный партнёр
+          </p>
+        </div>
+        <div class="footer__partners-block">
+          <a
+            href="https://www.prokhorovfund.ru/"
+            class="footer__partners-link"
+            target="_blank"
+            ><img
+              class="footer__partners-logo"
+              src="./images/partners/Фонд Михаила Прохорова.jpg"
+              alt="Фонд Михаила Прохорова"
+          /></a>
+          <p class="footer__partners-text body-text">Генеральный партнёр</p>
+        </div>
+        <a
+          href="https://www.brewhouse.pro/"
+          class="footer__partners-link"
+          target="_blank"
+          ><img
+            class="footer__partners-logo"
+            src="./images/partners/Mosbrew brewhouse project.jpg"
+            alt="Mosbrew brewhouse project"
+        /></a>
+        <div class="footer__partners-block">
+          <a
+            href="https://sbtg.ru/"
+            class="footer__partners-link"
+            target="_blank"
+            ><img
+              class="footer__partners-logo"
+              src="./images/partners/SBTG Онлайн-трансляции.jpg"
+              alt="SBTG Онлайн-трансляции"
+          /></a>
+          <p class="footer__partners-text body-text">Онлайн-трансляции</p>
+        </div>
+        <a
+          href="https://www.youtube.com/channel/UCp2J7GRxQ36QLqW4ReLLt5g"
+          class="footer__partners-link"
+          target="_blank"
+          ><img
+            class="footer__partners-logo"
+            src="./images/partners/А Поговорить.jpg"
+            alt="А Поговорить"
+        /></a>
+      </div>
+      <div class="footer__copyright body-text body-text--caption">
+        <div class="footer__copyright-block">
+          <p class="footer__copyright-text footer__copyright-text_position_top">
+            &copy Любимовка, 2021
+          </p>
+          <a class="footer__copyright-link" href="#" target="_blank"
+            >Политика конфиденциальности</a
+          >
+        </div>
+        <div class="footer__copyright-block">
+          <div class="footer__designers">
+            <img
+              class="footer__designers-img"
+              src="./images/footer__copyright-designers.svg"
+              alt="Логотип Shishki.collective"
+            />
+            <p class="footer__copyright-text">
+              дизайн сайта —<br /><a
+                class="footer__copyright-link"
+                href="https://shishki.co/"
+                target="_blank"
+                >shishki.collective</a
+              >
+            </p>
+          </div>
+          <div class="footer__developers">
+            <p class="footer__copyright-text">
+              вёрстка и разработака — студенты<br /><a
+                class="footer__copyright-link"
+                href="https://practicum.yandex.ru/"
+                target="_blank"
+                >Яндекс.Практикума</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/video.js"></script>
+  </body>
 
 </html>
