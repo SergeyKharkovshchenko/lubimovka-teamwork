@@ -20,6 +20,7 @@ export default class SliderWithPhoto extends Slider {
       this._prevSlide();
     }
   }
+  
   _removeListeners() {
     document.removeEventListener('keydown', this._handleMove);
     window.removeEventListener('resize', this.init);

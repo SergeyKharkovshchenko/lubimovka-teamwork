@@ -16,7 +16,7 @@ export default class Slider {
 
   init() {
     this._width = this._slider.offsetWidth;
-    this._sliderList.style.width = this._width * this._images.lenght + 'px';
+    this._sliderList.style.width = this._width * this._images.length + 'px';
     this._images.forEach((item) => {
       item.style.width = this._width + 'px';
     });

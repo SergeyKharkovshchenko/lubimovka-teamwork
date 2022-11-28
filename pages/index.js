@@ -6,39 +6,38 @@ const peopleScrolling = new HorizontalScrollSection(
   '.people-section__peoples',
   'box-for-horizontal-scroll'
 );
+peopleScrolling.setScrollable();
 
 const playSectionScrolling = new HorizontalScrollSection(
   '.play-section__wrapper',
   'box-for-horizontal-scroll'
 );
+playSectionScrolling.setScrollable();
 
 const twoVideoSectionScrolling = new HorizontalScrollSection(
   '.two-video-section__wrapper',
   'box-for-horizontal-scroll'
 );
+twoVideoSectionScrolling.setScrollable();
 
 const threeVideoSectionScrolling = new HorizontalScrollSection(
   '.three-video-section__wrapper',
   'box-for-horizontal-scroll'
 );
-
-peopleScrolling.setScrollable();
-playSectionScrolling.setScrollable();
-twoVideoSectionScrolling.setScrollable();
 threeVideoSectionScrolling.setScrollable();
 
 const photo = document.querySelector('.photo-section');
-const image = Array.from(photo.querySelectorAll('.photo-section__list-img'));
+const images = Array.from(photo.querySelectorAll('.photo-section__list-img'));
 const slider = document.querySelector('.slider');
 
-image.forEach((item) => {
+images.forEach((item) => {
   item.addEventListener('click', () => {
     openSlider(item);
   });
 });
 
 const openSlider = (item) => {
-  const gallery = new SliderWithPhoto(slider, image.indexOf(item));
+  const gallery = new SliderWithPhoto(slider, images.indexOf(item));
   const popupSlider = new PopupWithSlider('.popup_open_img', {
     removeListeners: () => {
       gallery._removeListeners();
