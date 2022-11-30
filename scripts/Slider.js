@@ -16,7 +16,6 @@ export default class Slider {
 
   init() {
     this._width = this._slider.offsetWidth;
-    this._sliderList.style.width = this._width * this._images.length + 'px';
     this._images.forEach((item) => {
       item.style.width = this._width + 'px';
     });
@@ -55,7 +54,7 @@ export default class Slider {
     });
 
     this._sliderList.addEventListener('touchstart', this._handleTouchStart);
-    this._sliderList.addEventListener('touchend', this._handleTouchMove);
+    this._sliderList.addEventListener('touchmove', this._handleTouchMove);
   }
   _rollSlider() {
     this._sliderList.style.transform =
