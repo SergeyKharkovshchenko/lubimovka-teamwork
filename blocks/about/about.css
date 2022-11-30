@@ -1,37 +1,30 @@
 .about {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
   background-color: var(--accent-color);
+  padding: 56px 24px 72px;
 }
 
 .about__heading {
-  margin-top: 79px;
   margin-bottom: 17px;
 }
 
-@media (min-width: 768px) {
-  .section-title_about {
-    margin-top: 79px;
-    max-width: 716px;
-  }
-  }
-
 .about__description {
-  margin: 0 24px 72px 85px;
-  width: 70%;
-  height: 58%;
-  max-width: 509px;
+  padding-left: 60px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 450px;
 }
 
-@media (min-width: 520px) {
-  .about__description {
-    margin: 0 auto 120px auto;
+@media (min-width: 768px) {
+  .about {
+    padding-top: 79px;
+    padding-bottom: 120px;
   }
-}
 
-@media (min-width: 1300px) {
   .about__description {
-    margin: 0 auto 120px 420px;
+    padding-left: 0;
+    padding-right: 90px;
+    max-width: 600px;
   }
 }

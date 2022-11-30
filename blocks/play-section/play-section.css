@@ -3,10 +3,13 @@
   padding: 100px 0 100px 24px;
 }
 
+.play-section__title {
+  margin-bottom: 32px;
+}
+
 .play-section__wrapper {
   width: 100%;
   display: flex;
-  margin-top: 32px;
 }
 
 .play-section__card {
