@@ -7,6 +7,7 @@
   --body-font: 'Formular', 'Verdana', sans-serif;
   --heading-font: 'Neue-Machina', 'Verdana', sans-serif;
   --main-letter-spacing: -0.01em;
+  --fog-width: 30px;
 }
 
 .page {

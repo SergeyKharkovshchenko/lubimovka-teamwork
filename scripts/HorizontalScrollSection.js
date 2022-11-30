@@ -1,7 +1,13 @@
 export default class HorizontalScrollSection {
-  constructor(sectionSelector, scrollableSelector) {
+  constructor(
+    sectionSelector,
+    { scrollableClass, fogWrapperSelector, leftFogClass, rightFogClass }
+  ) {
     this.section = document.querySelector(sectionSelector);
-    this.scrollableClass = scrollableSelector;
+    this.scrollableClass = scrollableClass;
+    this.fogEl = this.section.closest(fogWrapperSelector);
+    this.leftFogClass = leftFogClass;
+    this.rightFogClass = rightFogClass;
   }
 
   #checkScrollable() {
@@ -15,6 +21,23 @@ export default class HorizontalScrollSection {
       this.section.classList.add(this.scrollableClass);
     } else {
       this.section.classList.remove(this.scrollableClass);
+    }
+    this.#checkFog(this.section);
+  }
+
+  #checkFog(offsetEl) {
+    if (this.section.scrollLeft > 0) {
+      this.fogEl.classList.add(this.leftFogClass);
+    } else {
+      this.fogEl.classList.remove(this.leftFogClass);
+    }
+    if (
+      this.section.scrollWidth - this.section.scrollLeft >
+      offsetEl.offsetWidth
+    ) {
+      this.fogEl.classList.add(this.rightFogClass);
+    } else {
+      this.fogEl.classList.remove(this.rightFogClass);
     }
   }
 
@@ -59,6 +82,7 @@ export default class HorizontalScrollSection {
       if (this.isMouseDown && e.isPrimary) {
         this.section.scrollLeft += this.startX - e.clientX;
         this.startX = e.clientX;
+        this.#checkFog(e.currentTarget);
       }
     });
 

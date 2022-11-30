@@ -2,27 +2,29 @@ import HorizontalScrollSection from '../scripts/HorizontalScrollSection.js';
 import SliderWithPhoto from '../scripts/SliderWithPhoto.js';
 import PopupWithSlider from '../scripts/PopupWithSlider.js';
 
+import { scrollClasses } from '../utils/constants.js';
+
 const peopleScrolling = new HorizontalScrollSection(
   '.people-section__peoples',
-  'box-for-horizontal-scroll'
+  scrollClasses
 );
 peopleScrolling.setScrollable();
 
 const playSectionScrolling = new HorizontalScrollSection(
   '.play-section__wrapper',
-  'box-for-horizontal-scroll'
+  scrollClasses
 );
 playSectionScrolling.setScrollable();
 
 const twoVideoSectionScrolling = new HorizontalScrollSection(
   '.two-video-section__wrapper',
-  'box-for-horizontal-scroll'
+  scrollClasses
 );
 twoVideoSectionScrolling.setScrollable();
 
 const threeVideoSectionScrolling = new HorizontalScrollSection(
   '.three-video-section__wrapper',
-  'box-for-horizontal-scroll'
+  scrollClasses
 );
 threeVideoSectionScrolling.setScrollable();
 
@@ -47,4 +49,3 @@ const openSlider = (item) => {
   gallery.setEventListeners();
   popupSlider.open();
 };
-

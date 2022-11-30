@@ -1,6 +1,6 @@
 .play-section {
   overflow: hidden;
-  padding: 100px 0 100px 24px;
+  padding: 100px 0;
 }
 
 .play-section__title {
@@ -9,13 +9,16 @@
 
 .play-section__wrapper {
   width: 100%;
+  box-sizing: border-box;
   display: flex;
+  padding-left: 25px;
+  padding-right: 25px;
+  column-gap: 30px;
 }
 
 .play-section__card {
   min-width: 244px;
   min-height: 441px;
-  margin-right: 30px;
 }
 
 .play-section__inner {
