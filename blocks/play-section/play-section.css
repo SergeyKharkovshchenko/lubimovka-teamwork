@@ -1,0 +1,44 @@
+.play-section {
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.play-section__title {
+  margin-bottom: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.play-section__wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding-left: 25px;
+  padding-right: 25px;
+  column-gap: 30px;
+}
+
+.play-section__card {
+  min-width: 244px;
+  min-height: 441px;
+}
+
+.play-section__inner {
+  min-height: 341px;
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.play-section__card-links {
+  width: 100%;
+}
+
+.play-section__info {
+  margin-top: 24px;
+}
+
+.play-section__heading {
+  padding: 16px 40px 0 16px;
+}

@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-color);
+  padding: 56px 24px 72px;
+}
+
+.about__heading {
+  margin-bottom: 17px;
+}
+
+.about__description {
+  padding-left: 60px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 450px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding-top: 79px;
+    padding-bottom: 120px;
+  }
+
+  .about__description {
+    padding-left: 0;
+    padding-right: 90px;
+    max-width: 600px;
+  }
+}

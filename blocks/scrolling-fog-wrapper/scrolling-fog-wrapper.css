@@ -1,0 +1,25 @@
+.scrolling-fog-wrapper {
+  position: relative;
+}
+
+.scrolling-fog-wrapper::before, .scrolling-fog-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: var(--fog-width);
+}
+
+.scrolling-fog-wrapper_left-fog::before {
+  background: linear-gradient(90deg, rgba(229,229,229,1) 0%, rgba(229,229,229,0) 100%);
+  left: 0;
+  z-index: 5;
+}
+
+.scrolling-fog-wrapper_right-fog::after {
+  background: linear-gradient(-90deg, rgba(229,229,229,1) 0%, rgba(229,229,229,0) 100%);
+  right: 0;
+  z-index: 5;
+}
+
+

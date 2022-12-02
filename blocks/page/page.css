@@ -1,0 +1,35 @@
+:root {
+  --accent-color: #B7C09D;
+  --back-color: #ECEBE8;
+  --base-color: #242424;
+  --page-color: #E5E5E5;
+  --base-text-size: 16px;
+  --body-font: 'Formular', 'Verdana', sans-serif;
+  --heading-font: 'Neue-Machina', 'Verdana', sans-serif;
+  --main-letter-spacing: -0.01em;
+  --fog-width: 30px;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #242424;;
+  background-color: var(--page-color);
+  font-family: 'Formular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page__title {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 450px;
+  box-sizing: border-box;
+}
+
+@media(min-width: 768px) {
+  .page__title {
+    max-width: 720px;
+  }
+}

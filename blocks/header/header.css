@@ -1,0 +1,140 @@
+.header {
+  padding: 32px 24px;
+  display: flex;
+  align-items: start;
+  gap: 19px;
+  position: relative;
+}
+
+@media(min-width: 1350px) {
+  .header {
+    border-bottom: 1px solid var(--base-color);
+    padding: 15px 20px 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.header__logo {
+  margin-top: 4px;
+  z-index: 2;
+}
+
+@media(min-width: 1350px) {
+  .header__logo {
+    margin-top: 0;
+  }
+}
+
+.header__menu {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 100%;
+  padding: 0 16px 0;
+  background-color: var(--page-color);
+  overflow: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition-property: padding, bottom;
+  transition-duration: .1s;
+  transition-timing-function: linear;
+}
+
+.header__menu::-webkit-scrollbar {
+  display: none;
+}
+
+@media(min-width: 1200px) {
+  .header__menu  {
+    left: auto;
+    border-left: 1px solid var(--base-color);
+  }
+}
+
+@media(min-width: 1350px) {
+  .header__menu {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    border-left: 0px solid var(--base-color);
+  }
+}
+
+.header__menu_opened  {
+  padding-top: 88px;
+  padding-bottom: 16px;
+  bottom: 0;
+  transition-duration: .2s;
+}
+
+@media(min-width: 1200px) {
+  .header__menu_opened  {
+    left: auto;
+    border-left: 1px solid var(--base-color);
+  }
+}
+
+@media(min-width: 1350px) {
+  .header__menu_opened  {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-left: 0px solid var(--base-color);
+  }
+}
+
+.header__menu-section {
+  margin: 0;
+  padding: 6px 0;
+  list-style-type: none;
+  border-bottom: 1px solid var(--base-color);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  row-gap: 10px;
+}
+
+@media(min-width: 1350px) {
+  .header__menu-section {
+    border-bottom: none;
+    flex-direction: row;
+    border-right: 1px solid var(--base-color);
+    padding: 13px 14px;
+  }
+}
+
+@media(min-width: 1350px) {
+  .header__menu-section_main {
+    gap: 24px;
+  }
+}
+
+.header__single-link {
+  align-self: end;
+  padding: 5px 0;
+}
+
+@media(min-width: 1350px) {
+  .header__single-link {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    padding: 13px 0 13px 13px;
+  }
+}
+
+.header__button {
+  z-index: 2;
+}
+
+@media(min-width: 1350px) {
+  .header__button {
+    position: absolute;
+    top: calc(100% + 32px);
+  }
+}

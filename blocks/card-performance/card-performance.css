@@ -1,0 +1,111 @@
+.card-performance {
+  display: grid;
+  grid-template-areas:
+    "img description"
+    "buttons buttons";
+  border-bottom: 1px solid var(--base-color);
+  padding: 32px 22px;
+  align-content: flex-start;
+  column-gap: 30px;
+}
+
+.card-performance__img {
+  width: 92px;
+  height: 123px;
+  grid-area: img;
+}
+
+.card-performance__description {
+  grid-area: description;
+}
+
+.card-performance__data {
+  display: flex;
+}
+
+.card-performance__day {
+  margin-right: 34px;
+}
+
+.card-performance__time {}
+
+.card-performance__title {
+  margin: 16px 0 8px;
+}
+.card-performance__actors {
+  margin-bottom: 8px;
+}
+
+.card-performance__actors-text {
+  margin: 0;
+}
+
+.card-performance__content {
+  max-width: 200px;
+  margin: 0 0 48px;
+}
+
+.card-performance__buttons {
+  display: inline-flex;
+  align-items: flex-start;
+  grid-area: buttons;
+}
+
+.card-performance__button:not(:last-child) {
+  margin-right: 27px;
+}
+
+@media(min-width: 768px) {
+  .card-performance {
+    grid-template-areas:
+      "img description"
+      "img buttons";
+    border-right: 1px solid var(--base-color);
+    border-bottom: none;
+    padding: 0 22px;
+    margin: 32px 0;
+  }
+
+  .card-performance:nth-child(2n) {
+    border: none;
+  }
+
+  .card-performance__img {
+    height: 161px;
+    width: 120px;
+  }
+
+  .card-performance__actors {
+    padding-left: 30px;
+    margin-bottom: 16px;
+  }
+
+  .card-performance__title {
+    margin-bottom: 16px;
+  }
+
+  .card-performance__content {
+    margin: 0 0 16px;
+  }
+
+  .card-performance__buttons {
+    flex-direction: column;
+  }
+
+
+  .card-performance__button:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+@media(min-width: 1050px) {
+  .card-performance:nth-child(2n) {
+    border-right: 1px solid var(--base-color);
+  }
+
+  .card-performance:nth-child(3n) {
+    border: none;
+  }
+}
+

@@ -1,0 +1,77 @@
+.menu-button {
+  width: 72px;
+  height: 72px;
+  border: none;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--base-color);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.menu-button_opened {
+  position: fixed;
+}
+
+@media(min-width: 1350px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button__burger {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  transition: all .2s linear;
+}
+
+.menu-button__burger::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-7px);
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transition: all .2s linear;
+}
+
+.menu-button__burger::after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(7px);
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transition: all .2s linear;
+}
+
+.menu-button__burger_opened {
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.menu-button__burger_opened::before {
+  top: calc(62% - 1px);
+  left: calc(12%);
+  rotate: 45deg;
+}
+
+.menu-button__burger_opened::after {
+  bottom: calc(62% - 1px);
+  left: calc(12%);
+  rotate: -45deg;
+}
+
